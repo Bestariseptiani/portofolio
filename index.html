@@ -9,6 +9,18 @@
 </head>
 <body>
 
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Web Developer</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
             <span><b>PORTO<span class="red">FOLIO.</b></span></span>
         </a>
@@ -30,6 +42,109 @@
             <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
         </ul>
     </nav>
+
+    <!-- ABOUT ME / HERO -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+
+            <!-- BAGIAN KIRI: DESKRIPSI -->
+            <div class="hero-content">
+                <p class="hero-greeting">
+                    HELLO, WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hi, I'm <span class="hero-name">lorem ipsum</span>
+                    <br>
+                    <span class="hero-role">Information Systems Student</span>
+                </h1>
+
+                <p class="hero-description">
+I am a graduate with a Diploma (D3) degree in Information Systems from Universitas Pembangunan Nasional Veteran Jakarta,  achieving a GPA of 3.88. During my studies, I was an active member of the Information Systems student association,  serving in the Media and Communication department within the Creative division.  I also completed an internship at the Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) as a Junior Web Developer.  My skill set encompasses software development, data analysis, and creative design. I possess strong communication skills,  excel at working within a team, and am highly adaptable.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        Explore My Projects ↗
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- KOTAK DI BAWAH DESKRIPSI -->
+                <div class="hero-cards">
+                    <div class="hero-card">
+                        <span class="card-icon">01</span>
+                        <h3>Education</h3>
+                        <p>Information Systems</p>
+                    </div>
+
+                    <div class="hero-card">
+                        <span class="card-icon">02</span>
+                        <h3>Development</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <div class="hero-card">
+                        <span class="card-icon">03</span>
+                        <h3>Creative</h3>
+                        <p>Design & Media</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAGIAN KANAN: FOTO -->
+            <div class="hero-image">
+                <div class="image-decoration"></div>
+
+                <div class="image-frame">
+                    <img
+                        src="image/-"
+                        alt="Foto profil Putri"
+                        class="profile-photo"
+                    >
+                </div>
+
+                <div class="image-caption">
+                    <span class="status-dot"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+
+            const isOpen = navLinks.classList.contains("show");
+
+            menuToggle.classList.toggle("open", isOpen);
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Tutup menu" : "Buka menu"
+            );
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("show");
+                menuToggle.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Buka menu");
+            });
+        });
+    </script>
+
+</body>
+</html>
+    
 
     <script>
         const menuToggle = document.getElementById("menuToggle");
