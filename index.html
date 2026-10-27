@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio showcasing education, experience, organization activities, and projects.">
+  <title>Portofolio | Web Developer</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a class="brand" href="#about" aria-label="Portfolio home"><b>PORTO<span class="red">FOLIO.</span></b></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link active">About Me</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#organization" class="nav-link">Organization</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#publications" class="nav-link">Publications</a></li>
+      <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">HELLO, WELCOME TO MY PORTFOLIO</p>
+          <h1>Hi, I'm <span class="hero-name">Putri</span><br><span class="hero-role">Information Systems Graduate</span></h1>
+          <p class="hero-description">I am a graduate with a Diploma (D3) degree in Information Systems from Universitas Pembangunan Nasional Veteran Jakarta, achieving a GPA of 3.88. During my studies, I was active in the Information Systems student association, serving in the Media and Communication department within the Creative division. I also completed an internship at Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) as a Junior Web Programmer. My skills include web development, data analysis, and creative design. I communicate effectively, work well in a team, and adapt quickly.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">Explore My Projects ↗</a>
+                <a href="assets/CV - Mas Roro Putri Rhilowati Septiani.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">My CV</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
+          </div>
+          <div class="hero-cards">
+            <div class="hero-card"><span class="card-icon">01</span><h3>Education</h3><p>Information Systems</p></div>
+            <div class="hero-card"><span class="card-icon">02</span><h3>Development</h3><p>Web Development</p></div>
+            <div class="hero-card"><span class="card-icon">03</span><h3>Creative</h3><p>Design &amp; Media</p></div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-frame"><img src="assets/profile.jpg" alt="Foto profil Putri" class="profile-photo" onerror="this.style.display='none'"></div>
+          <p class="image-caption"><span class="status-dot"></span> Open to opportunities</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="section-container">
+        <header class="section-heading education-heading">
+          <p class="section-label">MY BACKGROUND</p><h2>Educ<span>ation</span></h2>
+          <p class="section-description">My academic journey and educational background.</p>
+        </header>
+        <div class="education-cards">
+          <article class="education-card">
+            <div class="education-logo"><img src="assets/upnvj.jpg" alt="Logo Universitas Pembangunan Nasional Veteran Jakarta" loading="lazy"></div>
+            <div class="education-content">
+              <span class="education-year">2023 – 2026</span>
+              <h3>D3 Information Systems</h3><h4>Universitas Pembangunan Nasional “Veteran” Jakarta · GPA 3.88</h4>
+              <p>Participated in the D3 Information Systems Student Association and faculty events, including FIKFAIR and FKBMIK. Served as a mentor for Patribera 2024 and joined a supplementary Web Development class with KSM Multimedia to strengthen programming skills.</p>
+              <h5>Selected Publications</h5>
+              <ol class="publication-list">
+                <li>PIGO (Pizza Go): Implementasi Aplikasi Berbasis Website Menggunakan Metode Waterfall.</li>
+                <li>Manajemen Proyek Sistem Parkir Cerdas Berbasis Radio Frequency Identification (RFID) Menggunakan Pendekatan Work Breakdown Structure (WBS) dan Network Diagram.</li>
+              </ol>
+              <p><strong>Final Project:</strong> Aplikasi Pemesanan Menu Berbasis QR Code dengan Algoritma Dynamic Estimated Time Arrival (Studi Kasus: Warmindo 25).</p>
+            </div>
+          </article>
+          <article class="education-card">
+            <div class="education-logo"><img src="assets/sekolah.jpeg" alt="Logo SMK Fatahillah Cileungsi" loading="lazy"></div>
+            <div class="education-content">
+              <span class="education-year">2020 – 2023</span>
+              <h3>Software Engineering</h3><h4>SMK Fatahillah Cileungsi · Score 82.6</h4>
+              <p>Gained practical experience in web development using HTML, PHP, MySQL, and JavaScript, as well as application development, database management, and programming logic. Developed a mobile application titled “Pahlawan” featuring biographies and historical information about Indonesian national heroes. Completed a competency examination by developing a desktop-based public complaint system.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="experience section" id="experience">
+    <div class="section-container">
+        <header class="section-heading">
+            <p class="section-label">MY JOURNEY</p>
+            <h2>Experience</h2>
+            <p class="section-description">My professional experience, technical projects, and continuous learning journey.</p>
+        </header>
+
+        <div class="experience-cards">
+
+            <!-- KEMENDIKDASMEN -->
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div class="experience-logo">
+                        <img src="assets/magang1.jpeg" alt="Kemendikdasmen logo" loading="lazy">
+                    </div>
+                    <span class="experience-period">Sep 2025 – Jan 2026</span>
+                </div>
+
+                <h3>Junior Web Programmer Intern</h3>
+                <h4>Kementerian Pendidikan Dasar dan Menengah</h4>
+                <p class="experience-type">Web Development Internship</p>
+
+                <ul>
+                    <li>Contributed to the development of an educational book website using HTML, CSS, JavaScript, and PHP to improve access to digital learning resources.</li>
+                    <li>Developed a book search feature and digital catalog to help users discover educational publications more efficiently.</li>
+                    <li>Conducted functional testing and debugging while evaluating website responsiveness and usability across different devices.</li>
+                </ul>
+
+                <a href="https://www.linkedin.com/company/kementrian-pendidikan-dan-kebudayaan/home/"
+                   class="experience-demo"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Social Media
+                </a>
+            </article>
+
+            <!-- KSM MULTIMEDIA -->
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div class="experience-logo">
+                        <img src="assets/ksm.jpeg" alt="KSM Multimedia UPNVJ logo" loading="lazy">
+                    </div>
+                    <span class="experience-period">Feb 2024 – Dec 2024</span>
+                </div>
+
+                <h3>Web Development Participant</h3>
+                <h4>KSM Multimedia UPN Veteran Jakarta</h4>
+                <p class="experience-type">Web Development Training &amp; Collaborative Project</p>
+
+                <ul>
+                    <li>Completed a Web Development learning program focused on strengthening full-stack development fundamentals and practical programming skills.</li>
+                    <li>Collaborated with team members to build a website using PHP and Laravel, applying web development concepts in a collaborative project environment.</li>
+                    <li>Strengthened problem-solving, teamwork, and the ability to translate project requirements into functional web components.</li>
+                </ul>
+
+                <a href="https://www.instagram.com/multimediaupnvj/"
+                   class="experience-demo"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Social Media
+                </a>
+            </article>
+
+            <!-- CV ANNORA VEDDIRA -->
+            <article class="experience-card">
+                <div class="experience-top">
+                    <div class="experience-logo">
+                        <img src="assets/annora.jpeg" alt="CV Annora Veddira logo" loading="lazy">
+                    </div>
+                    <span class="experience-period">Nov 2021 – Present</span>
+                </div>
+
+                <h3>Digital Marketing &amp; Property Promotion</h3>
+                <h4>CV Annora Veddira</h4>
+                <p class="experience-type">Digital Marketing &amp; Content Creation</p>
+
+                <ul>
+                    <li>Created visual content and promotional materials for social media to support property marketing and strengthen digital brand presence.</li>
+                    <li>Organized and presented property information into clear, engaging promotional content to help audiences understand listing details.</li>
+                    <li>Maintained visual consistency across marketing materials to support a professional and recognizable brand identity.</li>
+                </ul>
+
+                <a href="https://www.instagram.com/annora.property/"
+                   class="experience-demo"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Social Media
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+    <section class="organization section" id="organization">
+      <div class="section-container">
+        <header class="section-heading"><p class="section-label">MY ACTIVITIES</p><h2>Organization Experience</h2><p class="section-description">My contributions and creative works in student organizations.</p></header>
+        <div class="organization-cards">
+          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Sep 2024 – Sep 2025</p><h3>HIMA D3 Sistem Informasi</h3><h4>Creative Division Staff</h4></div><span class="organization-number">01</span></div><p class="organization-description">Created visual designs and publication materials for student activities, organizational events, and social media content to support communication and promotion.</p><h5 class="gallery-title">Selected Works</h5><div class="organization-gallery"><img src="assets/hima1.jpg" alt="HIMA design 1" loading="lazy"><img src="assets/hima2.jpg" alt="HIMA design 2" loading="lazy"><img src="assets/hima4.jpg" alt="HIMA design 3" loading="lazy"></div></article>
+          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Study Visit Event</p><h3>Studi Banding</h3><h4>Head of Media and Communication Division</h4></div><span class="organization-number">02</span></div><p class="organization-description">Coordinated the media and communication team, delegated tasks, and managed publication materials to support event communication and promotion.</p><h5 class="gallery-title">Selected Works</h5><div class="organization-gallery"><img src="assets/hima3.jpg" alt="Study visit design 1" loading="lazy"><img src="assets/hima5.jpg" alt="Study visit design 2" loading="lazy"></div></article>
+
+<article class="organization-card">
+    <div class="organization-info">
+        <div>
+            <p class="organization-period">Feb 2024 – Dec 2024</p>
+            <h3>KSM Multimedia</h3>
+            <h4>Web Development Participant</h4>
+        </div>
+        <span class="organization-number">03</span>
+    </div>
+
+    <div class="organization-description">
+        <ul>
+            <li>Participated in web development training sessions covering website development concepts, front-end and back-end fundamentals, and the use of PHP and Laravel.</li>
+            <li>Applied the knowledge gained throughout the training by collaborating with team members to plan, develop, and complete a website project as the final class assignment.</li>
+            <li>Worked collaboratively to divide tasks, share ideas, solve technical problems, and integrate different components into a functional website.</li>
+            <li>Strengthened practical programming skills, teamwork, communication, and problem-solving abilities through hands-on learning and project-based collaboration.</li>
+        </ul>
+    </div>
+</article>
+
+<article class="organization-card">
+    <div class="organization-info">
+        <div>
+            <p class="organization-period">Event Committee</p>
+            <h3>FIKFAIR</h3>
+            <h4>Event Division Staff</h4>
+        </div>
+        <span class="organization-number">04</span>
+    </div>
+
+    <div class="organization-description">
+        <ul>
+            <li>Contributed to the planning and preparation of FIKFAIR activities to support the successful execution of the event.</li>
+            <li>Assisted in preparing the event rundown, organizing activity sequences, and ensuring that each session followed the established schedule.</li>
+            <li>Coordinated with fellow committee members and other divisions to align event requirements, communicate updates, and support operational needs.</li>
+            <li>Helped manage on-site event activities, responded to changing situations, and supported the committee in maintaining an organized event flow.</li>
+            <li>Developed teamwork, communication, time management, and coordination skills through direct involvement in student event organization.</li>
+        </ul>
+    </div>
+</article>
+
+<article class="organization-card">
+    <div class="organization-info">
+        <div>
+            <p class="organization-period">Event Committee</p>
+            <h3>FKBMIK</h3>
+            <h4>Event Division Staff</h4>
+        </div>
+        <span class="organization-number">05</span>
+    </div>
+
+    <div class="organization-description">
+        <ul>
+            <li>Contributed to the planning and execution of FKBMIK, a collaborative event involving three campuses: UPNVJ, UPNVJT, and UPNVYK.</li>
+            <li>Assisted in preparing the event rundown, organizing activity schedules, and arranging program sequences to support smooth event execution.</li>
+            <li>Collaborated with committee members to coordinate event preparations, communicate activity requirements, and ensure alignment between different teams.</li>
+            <li>Supported the coordination of event activities involving participants from the three campuses, helping maintain an organized and engaging event environment.</li>
+            <li>Strengthened teamwork, communication, time management, and event coordination skills through involvement in a multi-campus student event.</li>
+        </ul>
+    </div>
+</article>
+
+
+          <article class="organization-card">
+    <div class="organization-info">
+        <div>
+            <p class="organization-period">Student Orientation Program</p>
+            <h3>PATRIBERA UPNVJ</h3>
+            <h4>Student Mentor</h4>
+        </div>
+        <span class="organization-number">05</span>
+    </div>
+
+    <p class="organization-description">
+        Mentored and guided new students during the PATRIBERA UPNVJ program,
+        helping them adapt to university life, understand campus culture,
+        and become familiar with the academic environment.
+    </p>
+
+    <h5 class="gallery-title">Program Documentation</h5>
+    <div class="organization-gallery">
+        <img src="assets/patribera1.jpg" alt="PATRIBERA UPNVJ documentation 1" loading="lazy"><img src="assets/patribera3.jpg" alt="PATRIBERA UPNVJ documentation 2" loading="lazy"><img src="assets/patribera4.jpg" alt="PATRIBERA UPNVJ documentation 3" loading="lazy">
+    </div>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-container">
+        <header class="section-heading">
+          <p class="section-label">MY WORK</p>
+          <h2>Projects</h2>
+          <p class="section-description">Selected web development and UI/UX projects I have worked on.</p>
+        </header>
+
+        <div class="project-cards">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/warmindo (1).png" alt="Warmindo25 QR-based food ordering website" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">Full-Stack Web Development</p>
+              <h3>Warmindo25</h3>
+              <p class="project-description">Developed a web-based food ordering system for Warmindo 25. The project supports digital menu ordering and applies an estimated arrival time approach to help users understand their order waiting time.</p>
+              <div class="project-tech"><span>JavaScript</span><span>PHP</span><span>CSS</span></div>
+              
+<div class="project-links">
+    <a href="https://github.com/Bestariseptiani/warmindo25"
+       class="project-link"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+        View github
+    </a>
+</div>
+
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/warista.png" alt="Warista user interface design" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">UI/UX Design &amp; Front-End Development</p>
+              <h3>Warista</h3>
+              <p class="project-description">Designed the interface in Figma and developed the front end of a platform that guides users through preparing an heirship declaration letter. The platform presents the process in a clear, practical way and helps users understand the administrative steps involved.</p>
+              <div class="project-tech"><span>Figma</span><span>Front-End</span><span>UI/UX Design</span></div>
+              <div class="project-links">
+    <a href="https://github.com/Chocostobeli/UAS_FRONTEND.git" class="project-link" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> View github </a>
+</div>
+            </div>
+          </article>
+          <article class="project-card">
+    <div class="project-image">
+        <img src="assets/myskilll.png" alt="Data Preparation and Visualization using Tableau" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="project-content">
+        <p class="project-category">Data Analytics &amp; Visualization</p>
+        <h3>Data Preparation and Visualization</h3>
+        <p class="project-description">
+            Completed a Data Science Introduction short class by MySkill, applying essential data preparation techniques using Tableau Desktop. The project involved identifying and removing duplicate records, creating unique identifiers, standardizing categorical data, reviewing data types, and handling missing values. I also developed visualizations to compare average age and height across countries, strengthening my understanding of data quality and effective data visualization.
+        </p>
+        <div class="project-tech">
+            <span>Tableau Desktop</span>
+            <span>Data Preparation</span>
+            <span>Data Visualization</span>
+        </div>
+<div class="project-links">
+    <a href="https://lnkd.in/p/gHmEcNDC" 
+       class="project-link" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <i class="fas fa-external-link-alt"></i> Live presentasi
+    </a>
+</div>
+    </div>
+</article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/culinatech-ai.png" alt="Culinatech AI restaurant ordering interface" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">Full-Stack Application</p>
+              <h3>Culinatech AI</h3>
+              <p class="project-description">Developed a restaurant ordering application featuring menu items such as burgers and sandwiches. The interface includes menu customization, portion controls, topping and side-option selection, order summaries, and payment-method selection.</p>
+              <div class="project-tech"><span>Front-End</span><span>Back-End</span><span>UI Design</span></div>
+              <div class="project-links"><span class="project-link project-link-static">Full-Stack Project</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/pengaduan-masyarakat.png" alt="Public complaint application project" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">Application Development</p>
+              <h3>Public Complaint Application</h3>
+              <p class="project-description">Developed an application for submitting and managing public complaints. The project focuses on providing a structured way for users to report issues and for submitted complaints to be recorded and reviewed.</p>
+              <div class="project-tech"><span>Application Development</span><span>Database</span></div>
+              <div class="project-links"><span class="project-link project-link-static">Application Project</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificates section" id="certificates">
+      <div class="section-container">
+        <header class="section-heading">
+          <p class="section-label">PROFESSIONAL DEVELOPMENT</p>
+          <h2>Certificates</h2>
+          <p class="section-description">Certifications and training programs that support my professional development.</p>
+        </header>
+        <div class="certificate-cards">
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/bsnp.png" alt="BNSP Junior Web Programmer certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">BNSP</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">LSP UPN Veteran Jakarta</p><h3>Junior Web Programmer</h3><p>Certificate of Competence · February 2026</p><span class="certificate-category">Web Development</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/sertifksm.png" alt="KSM Multimedia Web Development certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">WEB DEV</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>Web Development Class</h3><p>February – December 2024</p><span class="certificate-category">Programming</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/cousera.png" alt="Coursera Business Analysis and Process Management certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">COURSERA</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Coursera</p><h3>Business Analysis &amp; Process Management</h3><p>Issued September 2026</p><span class="certificate-category">Business Analysis</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/professionalkom.png" alt="Pearson Professional Communication certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">PEARSON</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Pearson</p><h3>Professional Communication</h3><p>Issued December 2025</p><span class="certificate-category">Communication</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/certificate_ai-career-readiness.png" alt="ASEAN Foundation AI Career Readiness Training badge" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">ASEAN Foundation</p><h3>AI Career Readiness Training</h3><p>Completed October 2026</p><span class="certificate-category">Artificial Intelligence</span></div>
+          </article>
+<article class="certificate-card">
+    <div class="certificate-image">
+        <img src="assets/pemakalah.png"
+             alt="SENAMIKA 2024 National Seminar Presenter Certificate"
+             loading="lazy"
+             onerror="this.style.display='none'">
+        <span class="certificate-placeholder">SENAMIKA 2024</span>
+    </div>
+
+    <div class="certificate-content">
+        <p class="certificate-issuer">Universitas Pembangunan Nasional Veteran Jakarta</p>
+        <h3>National Seminar Presenter</h3>
+        <p>
+            Participated as a paper presenter in the 2024 National Student Seminar
+            on Computer Science and Applications, presenting research on
+            Data Governance in Supporting Innovation and Enterprise Growth
+            in the Big Data Era.
+        </p>
+        <span class="certificate-category">Seminar &amp; Research</span>
+    </div>
+</article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/java.png" alt="Additional certificate 7" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">CERTIFICATE 07</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">oracle Academy</p><h3>java mundamental</h3><p>oracle Academy</p><span class="certificate-category">Add category</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/workshopksm.png" alt="Additional certificate 8" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">CERTIFICATE 08</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>workshop game Development</h3><p>Add issue date or completion period</p><span class="certificate-category">Add category</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/huawei.png" alt="Fundamental AI DEX Huawei Digital Talent Scholarship 2026 certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">FUNDAMENTAL AI</span></div>
+<div class="certificate-content"><p class="certificate-issuer">Digital Talent Academy · Komdigi</p><h3>Fundamental AI - DEX - Huawei</h3><p>Completed June – December 2026 · 19 Hours of Training</p><span class="certificate-category">Artificial Intelligence</span></div>
+          </article>
+          <article class="certificate-card">
+    <div class="certificate-image"><img src="assets/Hacktiv8.png" alt="Hacktiv8 Student Developer Initiative Code Generations and Optimization certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">HACKTIV8</span></div>
+    <div class="certificate-content"><p class="certificate-issuer">Hacktiv8 Indonesia · IBM SkillsBuild</p><h3>Code Generations and Optimization</h3><p>Issued October 2025 · Training held September 2025</p><span class="certificate-category">Software Development</span></div>
+</article>
+
+<article class="certificate-card">
+    <div class="certificate-image"><img src="assets/Digital Talent Scholarship.png" alt="Digital Talent Scholarship 2025 Artificial Intelligence Micro Skill certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI MICRO SKILL</span></div>
+    <div class="certificate-content"><p class="certificate-issuer">Digital Talent Scholarship · Komdigi</p><h3>Dasar-Dasar Implementasi Kecerdasan Artifisial</h3><p>Issued October 2025 · 1 Hour of Training</p><span class="certificate-category">Artificial Intelligence</span></div>
+</article>
+
+<article class="certificate-card">
+    <div class="certificate-image">
+        <img src="assets/myskill2.png" alt="MySkill Short Class Data Science Introduction certificate" loading="lazy" onerror="this.style.display='none'">
+        <span class="certificate-placeholder">DATA SCIENCE</span>
+    </div>
+    <div class="certificate-content">
+        <p class="certificate-issuer">MySkill</p>
+        <h3>Data Science Introduction</h3>
+        <p>Issued October 2026</p>
+        <span class="certificate-category">Data Analysis</span>
+    </div>
+</article>
+        </div>
+      </div>
+    </section>
+
+
+<!-- PUBLICATIONS SECTION -->
+<section class="publications section" id="publications">
+    <div class="section-container">
+
+        <header class="section-heading">
+            <p class="section-label">RESEARCH & ACADEMIC WORK</p>
+            <h2>Publications <span>&amp; Research</span></h2>
+            <p class="section-description">
+                Academic research, conference papers, and final project
+                showcasing my work in information systems and software development.
+            </p>
+        </header>
+
+        <div class="publication-cards">
+
+            <!-- PUBLICATION 1: FINAL PROJECT -->
+            <article class="publication-card">
+                <div class="publication-number">01</div>
+
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <span class="publication-type">Final Project</span>
+                        <span class="publication-year">2026</span>
+                    </div>
+
+                    <h3>
+                        Aplikasi Pemesanan Menu Berbasis QR Code dengan
+                        Algoritma Dynamic Estimated Time Arrival
+                        (Studi Kasus: Warmindo 25)
+                    </h3>
+
+                    <p class="publication-authors">
+                        Mas Roro Putri Rhilowati Septiani
+                    </p>
+
+                    <p class="publication-venue">
+                        Tugas Akhir · Universitas Pembangunan Nasional Veteran Jakarta
+                    </p>
+
+                    <p class="publication-description">
+                        Designed and developed a web-based food ordering
+                        application using QR Code for table identification
+                        and a Dynamic Estimated Time Arrival (ETA) algorithm
+                        to estimate customer waiting times based on kitchen
+                        capacity. The system was developed using the Waterfall
+                        method to support order management and improve
+                        service efficiency at Warmindo 25.
+                    </p>
+
+                    <div class="publication-tags">
+                        <span>QR Code</span>
+                        <span>PHP</span>
+                        <span>Web Development</span>
+                        <span>Dynamic ETA</span>
+                        <span>Waterfall</span>
+                    </div>
+
+                    <div class="publication-actions">
+                        <a href="http://repository.upnvj.ac.id/id/eprint/51041"
+                           class="publication-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Repository ↗
+                        </a>
+
+                        <a href="http://repository.upnvj.ac.id/51041/1/ABSTRAK.pdf"
+                           class="publication-link publication-link-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read Abstract
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PUBLICATION 2: PIGO -->
+            <article class="publication-card">
+                <div class="publication-number">02</div>
+
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <span class="publication-type">Conference Paper</span>
+                        <span class="publication-year">2024</span>
+                    </div>
+
+                    <h3>
+                        PIGO (Pizza Go): Implementasi Aplikasi Berbasis
+                        Website Menggunakan Metode Waterfall
+                    </h3>
+
+                    <p class="publication-authors">
+                        Mas Roro Putri Rhilowati Septiani, Hasuna Zhafirah
+                        Jalianti, Afifi Rufaida, Cornelia Lidya, Theresia Wati
+                    </p>
+
+                    <p class="publication-venue">
+                        SENAMIKA · Prosiding Seminar Nasional Mahasiswa
+                        Bidang Ilmu Komputer dan Aplikasinya
+                    </p>
+
+                    <p class="publication-description">
+                        This research discusses the implementation of a
+                        website-based pizza ordering application using the
+                        Waterfall development method. The application provides
+                        online menu browsing, product descriptions, user
+                        authentication, shopping cart functionality, and
+                        payment method selection to support a more convenient
+                        digital purchasing experience.
+                    </p>
+
+                    <div class="publication-tags">
+                        <span>Website</span>
+                        <span>PHP</span>
+                        <span>E-Commerce</span>
+                        <span>Waterfall</span>
+                    </div>
+
+                    <div class="publication-actions">
+                        <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3202/2116"
+                           class="publication-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read Full Paper ↗
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PUBLICATION 3: SMART PARKING -->
+            <article class="publication-card">
+                <div class="publication-number">03</div>
+                <div class="publication-content">
+                    <div class="publication-meta">
+                        <span class="publication-type">Conference Paper</span>
+                        <span class="publication-year">2024</span>
+                    </div>
+
+                    <h3>
+                        Manajemen Proyek Sistem Parkir Cerdas Berbasis
+                        Radio Frequency Identification (RFID) Menggunakan
+                        Pendekatan Work Breakdown Structure (WBS)
+                        dan Diagram Jaringan
+                    </h3>
+
+                    <p class="publication-authors">
+                        Afifi Rufaida, Idelia Larisa,
+                        Mas Roro Putri Rhilowati Septiani, Tri Rahayu
+                    </p>
+
+                    <p class="publication-venue">
+                        SENAMIKA · Prosiding Seminar Nasional Mahasiswa
+                        Bidang Ilmu Komputer dan Aplikasinya
+                    </p>
+                    <p class="publication-description">
+                        This research explores project planning for a
+                        smart parking system using Radio Frequency
+                        Identification (RFID). Work Breakdown Structure
+                        (WBS), network diagrams, and activity dependencies
+                        are applied to organize project tasks, identify
+                        critical activities, and support efficient project
+                        scheduling and resource allocation.
+                    </p>
+                    <div class="publication-tags">
+                        <span>RFID</span>
+                        <span>Project Management</span>
+                        <span>WBS</span>
+                        <span>Network Diagram</span>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3061/2101"
+                           class="publication-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Read Full Paper 
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    
+
+<!-- CONTACT SECTION -->
+<section class="contact section" id="contact">
+    <div class="section-container contact-inner">
+        <p class="section-label">GET IN TOUCH</p>
+        <h2>Let's <span>Connect</span></h2>
+
+        <p class="section-description">
+            Feel free to reach out for job opportunities, collaboration,
+            or professional discussions. Let's connect!
+        </p>
+
+        <div class="contact-socials">
+
+            <a href="mailto:septialfian@gmail.com"
+               class="contact-social"
+               aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+                <span class="contact-arrow"></span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/masroroputri/"
+               class="contact-social"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+                <span class="contact-arrow"></span>
+            </a>
+
+            <a href="https://github.com/Bestariseptiani"
+               class="contact-social"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <span class="contact-arrow"></span>
+            </a>
+
+            <a href="https://www.instagram.com/gazliery/"
+               class="contact-social"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+                <span class="contact-arrow"></span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+  <footer class="footer"><p>© <span id="year"></span> Putri. All rights reserved.</p></footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('show');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Tutup menu' : 'Buka menu');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Buka menu');
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+<!-- CERTIFICATE IMAGE PREVIEW -->
+<div class="certificate-lightbox" id="certificateLightbox">
+    <button class="certificate-lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</button>
+    <button class="certificate-lightbox-arrow prev" id="lightboxPrev" aria-label="Sertifikat sebelumnya">&#10094;</button>
+    <div class="certificate-lightbox-content">
+        <img id="lightboxImage" src="" alt="Certificate preview">
+        <span class="certificate-lightbox-counter" id="lightboxCounter"></span>
+    </div>
+    <button class="certificate-lightbox-arrow next" id="lightboxNext" aria-label="Sertifikat berikutnya">&#10095;</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const images = Array.from(document.querySelectorAll(".certificate-image img"))
+        .filter(img => img.getAttribute("src") && img.getAttribute("src").trim() !== "");
+
+    const lightbox = document.getElementById("certificateLightbox");
+    const preview = document.getElementById("lightboxImage");
+    const closeBtn = document.getElementById("lightboxClose");
+    const prevBtn = document.getElementById("lightboxPrev");
+    const nextBtn = document.getElementById("lightboxNext");
+    const counter = document.getElementById("lightboxCounter");
+
+    if (!lightbox || !preview || images.length === 0) return;
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+        currentIndex = (index + images.length) % images.length;
+        preview.src = images[currentIndex].src;
+        preview.alt = images[currentIndex].alt || "Certificate preview";
+        counter.textContent = `${currentIndex + 1} / ${images.length}`;
+        lightbox.classList.add("active");
+        document.body.classList.add("lightbox-open");
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.classList.remove("lightbox-open");
+        preview.src = "";
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener("click", () => showImage(index));
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+    prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+    nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+
+    lightbox.addEventListener("click", event => {
+        if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", event => {
+        if (!lightbox.classList.contains("active")) return;
+        if (event.key === "Escape") closeLightbox();
+        if (event.key === "ArrowLeft") showImage(currentIndex - 1);
+        if (event.key === "ArrowRight") showImage(currentIndex + 1);
+    });
+});
+</script>
+
+  <script>function moveGallery(button,direction){const track=button.closest('.experience-gallery').querySelector('.gallery-track');track.scrollBy({left:direction*track.clientWidth,behavior:'smooth'});}</script>
+</body>
+</html>
