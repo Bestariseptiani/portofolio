@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portofolio pribadi yang menampilkan pendidikan, pengalaman, kegiatan organisasi, proyek, sertifikat, dan publikasi.">
-  <title>Portofolio | Web Developer</title>
+  <meta name="description" content="Portofolio Putri, lulusan D3 Sistem Informasi: pengelolaan basis data MySQL, pengembangan sistem informasi, dukungan pengguna, dan dasar keamanan informasi.">
+  <title>Portofolio | Putri - Sistem Informasi &amp; Basis Data</title>
   <link rel="stylesheet" href="style/style.css?v=2">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -32,20 +32,34 @@
         <div class="hero-content">
           <p class="hero-greeting">HALO, SELAMAT DATANG DI PORTOFOLIO SAYA</p>
           <h1>Halo, saya <span class="hero-name">Putri</span><br><span class="hero-role">Lulusan Sistem Informasi</span></h1>
-          <p class="hero-description">Saya merupakan lulusan D3 Sistem Informasi Universitas Pembangunan Nasional Veteran Jakarta dengan IPK 3,88. Memiliki ketertarikan pada Business Analysis, Business Process Management, dan Process Improvement. Saya memiliki pengalaman mengembangkan sistem informasi, menganalisis kebutuhan pengguna, mengidentifikasi permasalahan proses operasional, serta merancang solusi digital. Melalui berbagai proyek, saya mempelajari bagaimana teknologi dapat digunakan untuk menyederhanakan alur kerja, meningkatkan efisiensi operasional, dan mendukung pengambilan keputusan berbasis data.</p>
+          <p class="hero-description">Lulusan D3 Sistem Informasi Universitas Pembangunan Nasional "Veteran" Jakarta dengan IPK 3,88 dan pengalaman sebagai Junior Web Programmer Intern di Kementerian Pendidikan Dasar dan Menengah. Memiliki ketertarikan pada bidang Business Analysis, Business Process Management, dan pengembangan sistem informasi. Memiliki pemahaman mengenai analisis kebutuhan pengguna, pengelolaan database menggunakan MySQL dan SQL, pengembangan aplikasi berbasis web, pengujian sistem, serta manajemen proyek. Didukung pelatihan Business Analysis & Process Management dari Coursera dan pengalaman mengembangkan berbagai proyek aplikasi berbasis web, termasuk perancangan struktur database, implementasi query SQL, serta analisis proses bisnis untuk mendukung efisiensi proses operasional. Memiliki kemampuan berpikir analitis, pemecahan masalah, komunikasi, dan kolaborasi, serta motivasi untuk mengembangkan kompetensi dalam pengelolaan sistem informasi, pemetaan, evaluasi, dan optimalisasi proses bisnis melalui pemanfaatan teknologi digital.</p>
           <div class="hero-buttons">
             <a href="#projects" class="btn-primary">Lihat Proyek Saya ↗</a>
             <a href="assets/CV - Mas Roro Putri Rhilowati Septiani.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">CV Saya</a>
             <a href="#contact" class="btn-secondary">Hubungi Saya</a>
           </div>
-          <div class="hero-cards">
-            <div class="hero-card"><span class="card-icon">01</span><h3>Pendidikan</h3><p>Sistem Informasi</p></div>
-            <div class="hero-card"><span class="card-icon">02</span><h3>web</h3><p>development</p></div>
-            <div class="hero-card"><span class="card-icon">03</span><h3>data</h3><p>bisnis</p></div>
-          </div>
+<div class="hero-cards">
+  <div class="hero-card">
+    <span class="card-icon">01</span>
+    <h3>Pendidikan</h3>
+    <p>D3 Sistem Informasi</p>
+  </div>
+
+  <div class="hero-card">
+    <span class="card-icon">02</span>
+    <h3>Database</h3>
+    <p>MySQL &amp; SQL</p>
+  </div>
+
+  <div class="hero-card">
+    <span class="card-icon">03</span>
+    <h3>Sistem Informasi</h3>
+    <p>Web Development &amp; Analysis</p>
+  </div>
+</div>
         </div>
         <div class="hero-image">
-          <div class="image-frame"><img src="assets/profile.jpg" alt="Foto profil Putri" class="profile-photo" onerror="this.style.display='none'"></div>
+          <div class="image-frame"><img src="assets/profil.png" alt="Foto profil Putri" class="profile-photo" onerror="this.style.display='none'"></div>
           <p class="image-caption"><span class="status-dot"></span> Terbuka untuk peluang kerja</p>
         </div>
       </div>
@@ -295,9 +309,11 @@
                 Membangun sistem pemesanan makanan berbasis web untuk Warmindo 25. Pelanggan memindai QR Code di meja untuk melihat menu dan memesan langsung dari ponsel. Algoritma Dynamic Estimated Time of Arrival (ETA) menghitung estimasi waktu tunggu berdasarkan kapasitas dapur, sehingga pelanggan tahu kapan pesanan mereka siap.
               </p>
               <div class="project-tech">
-                <span>JavaScript</span><span>PHP</span><span>CSS</span><span>QR Code</span>
+                <span>JavaScript</span><span>PHP</span><span>MySQL</span><span>phpMyAdmin</span><span>CSS</span><span>QR Code</span>
               </div>
+              <p class="project-database"><i class="fas fa-database" aria-hidden="true"></i> <strong>Database:</strong> MySQL (MariaDB di XAMPP) dengan 10 tabel berelasi, dikelola lewat phpMyAdmin dan diakses dari PHP.</p>
 
+              <div class="analysis-actions">
               <details class="project-analysis">
                 <summary>Analisis Bisnis: Warmindo25</summary>
                 <div class="analysis-body">
@@ -383,6 +399,103 @@
                   </div>
                 </div>
               </details>
+
+              <details class="project-analysis" data-label="🗄️ Lihat Penjelasan Database">
+                <summary>Penjelasan Database: Warmindo25</summary>
+                <div class="analysis-body">
+                  <h5>1. Gambaran Basis Data</h5>
+                  <p>Seluruh data operasional Warmindo25 (menu, meja, pesanan, struk, dan data dapur) disimpan di basis data relasional <em>warmindo25</em> yang terdiri dari 10 tabel. Basis data dikelola melalui phpMyAdmin, diakses dari aplikasi PHP, dan dirancang lebih dulu dalam ERD.</p>
+                  <table class="analysis-table">
+                    <tr><th>Komponen</th><th>Yang Digunakan</th></tr>
+                    <tr><td>DBMS</td><td>MySQL (MariaDB 10.4 pada XAMPP), mesin penyimpanan InnoDB, charset utf8mb4</td></tr>
+                    <tr><td>Pengelolaan</td><td>phpMyAdmin 5.2 dan SQL</td></tr>
+                    <tr><td>Aplikasi</td><td>PHP 8 (sisi server) dan JavaScript (sisi pengguna)</td></tr>
+                    <tr><td>Perancangan</td><td>ERD (Entity Relationship Diagram)</td></tr>
+                  </table>
+
+                  <h5>2. Struktur Tabel</h5>
+                  <table class="analysis-table">
+                    <tr><th>Kelompok</th><th>Tabel</th><th>Fungsi</th></tr>
+                    <tr><td>Menu</td><td>menu, menu_items</td><td>Nama menu, kategori, harga, gambar, label (misalnya Populer atau Best Seller), dan status ketersediaan.</td></tr>
+                    <tr><td>Meja</td><td>tables</td><td>Nomor meja yang unik, status meja (Kosong atau Terisi), dan berkas QR Code tiap meja.</td></tr>
+                    <tr><td>Pesanan</td><td>orders, order_items, receipts</td><td>Pesanan per meja, rincian item beserta jumlah dan subtotal, serta struk dengan nomor unik.</td></tr>
+                    <tr><td>Pengguna</td><td>admin, kitchen_staff</td><td>Akun admin, dapur, dan pemilik dengan peran berbeda, serta data staf dapur.</td></tr>
+                    <tr><td>Pengaturan &amp; laporan</td><td>setting, owner_statistics</td><td>Nama usaha, pajak, dan biaya layanan, serta rekap harian untuk pemilik.</td></tr>
+                  </table>
+
+                  <h5>3. Relasi Antartabel (Foreign Key)</h5>
+                  <table class="analysis-table">
+                    <tr><th>Relasi</th><th>Aturan</th></tr>
+                    <tr><td>orders.table_id &rarr; tables.id</td><td>ON DELETE SET NULL: pesanan tetap tersimpan walau data meja dihapus.</td></tr>
+                    <tr><td>orders.kitchen_id &rarr; kitchen_staff.id</td><td>Mencatat staf dapur yang menangani pesanan.</td></tr>
+                    <tr><td>order_items.order_id &rarr; orders.id</td><td>ON DELETE CASCADE: item ikut terhapus bersama pesanannya.</td></tr>
+                    <tr><td>order_items.menu_id &rarr; menu.id</td><td>Item pesanan hanya bisa merujuk ke menu yang ada.</td></tr>
+                    <tr><td>receipts.order_id &rarr; orders.id</td><td>ON DELETE CASCADE: struk ikut terhapus bersama pesanannya.</td></tr>
+                  </table>
+
+                  <h5>4. Data Pendukung Dynamic ETA</h5>
+                  <ul>
+                    <li>Tabel <code>orders</code> menyimpan <code>eta_minutes</code> (estimasi waktu tunggu), <code>cooking_start</code> dan <code>cooking_finish</code> (waktu mulai dan selesai memasak), serta <code>actual_minutes</code> (lama pengerjaan sebenarnya).</li>
+                    <li>Kolom <code>eta_result</code> (Tepat Waktu, Lebih Cepat, atau Terlambat) membandingkan estimasi dengan kenyataan, sehingga akurasi algoritma dapat dievaluasi.</li>
+                    <li>Tabel <code>owner_statistics</code> menyediakan tempat rekap harian: pendapatan, jumlah pesanan, rata-rata ETA, dan jumlah pesanan tepat waktu, terlambat, atau lebih cepat.</li>
+                    <li>Status pesanan (Menunggu Pembayaran, Pending, Diproses, Disajikan, Selesai) dibatasi dengan ENUM agar nilainya selalu valid.</li>
+                  </ul>
+
+                  <h5>5. Contoh Query SQL</h5>
+                  <p><strong>JOIN:</strong> rincian pesanan yang sedang diproses beserta nomor mejanya, untuk antrean dapur.</p>
+                  <pre><code>SELECT o.id, t.nomor_meja, m.nama_menu, oi.quantity, oi.subtotal
+FROM orders o
+JOIN tables t       ON t.id = o.table_id
+JOIN order_items oi ON oi.order_id = o.id
+JOIN menu m         ON m.id = oi.menu_id
+WHERE o.status = 'Diproses'
+ORDER BY o.order_time;</code></pre>
+                  <p><strong>GROUP BY:</strong> rekap pendapatan harian.</p>
+                  <pre><code>SELECT DATE(order_time) AS tanggal,
+       COUNT(*) AS total_order,
+       SUM(total) AS pendapatan
+FROM orders
+WHERE status = 'Selesai'
+GROUP BY DATE(order_time)
+ORDER BY tanggal DESC;</code></pre>
+                  <p><strong>Menu terlaris:</strong> lima menu dengan jumlah terjual terbanyak.</p>
+                  <pre><code>SELECT m.nama_menu, SUM(oi.quantity) AS terjual
+FROM order_items oi
+JOIN menu m ON m.id = oi.menu_id
+GROUP BY m.id, m.nama_menu
+ORDER BY terjual DESC
+LIMIT 5;</code></pre>
+                  <p><strong>Evaluasi ETA:</strong> perbandingan hasil estimasi dengan lama pengerjaan sebenarnya.</p>
+                  <pre><code>SELECT eta_result, COUNT(*) AS jumlah,
+       AVG(actual_minutes) AS rata_menit
+FROM orders
+WHERE eta_result IS NOT NULL
+GROUP BY eta_result;</code></pre>
+
+                  <h5>6. Fungsi Basis Data dalam Sistem</h5>
+                  <ul>
+                    <li>Menjadi sumber data bersama bagi pelanggan, dapur, kasir, dan pemilik.</li>
+                    <li>Menyimpan jejak waktu pesanan, mulai masuk, dimasak, hingga selesai, sebagai bahan perhitungan dan evaluasi Dynamic ETA.</li>
+                    <li>Menghasilkan struk bernomor dan rekap penjualan tanpa pencatatan manual.</li>
+                  </ul>
+
+                  <h5>7. Keterbatasan &amp; Pengembangan Lanjutan</h5>
+                  <ul>
+                    <li>Password akun admin dan staf dapur masih tersimpan sebagai teks biasa; pengembangan berikutnya adalah menyimpannya sebagai hash (misalnya dengan <code>password_hash</code> di PHP).</li>
+                    <li>Tabel <code>menu</code> dan <code>menu_items</code> memiliki fungsi yang tumpang tindih dan perlu disatukan menjadi satu sumber data menu.</li>
+                    <li>Kategori menu masih berupa teks bebas; dapat dipisah menjadi tabel kategori sendiri agar penulisannya seragam.</li>
+                  </ul>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>8. Diagram Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warmindo/erd.png" alt="ERD Warmindo25"><figcaption>ERD (Entity Relationship Diagram)</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              </div>
 
               <div class="project-links">
                 <a href="https://github.com/Bestariseptiani/warmindo25" class="project-link" target="_blank" rel="noopener noreferrer">
@@ -690,9 +803,11 @@
                 Mengembangkan aplikasi pengaduan masyarakat yang memungkinkan pengguna mendaftar, masuk, dan mengirim laporan melalui formulir terstruktur. Aplikasi dilengkapi dasbor, riwayat pengaduan untuk memantau laporan yang telah dikirim, dan halaman profil, dengan seluruh data tersimpan di basis data agar mudah dicatat dan ditinjau.
               </p>
               <div class="project-tech">
-                <span>Pengembangan Aplikasi</span><span>Basis Data</span><span>Autentikasi Pengguna</span>
+                <span>Pengembangan Aplikasi</span><span>PHP</span><span>MySQL</span><span>phpMyAdmin</span><span>Autentikasi Pengguna</span>
               </div>
+              <p class="project-database"><i class="fas fa-database" aria-hidden="true"></i> <strong>Database:</strong> MySQL (MariaDB di XAMPP) dengan 5 tabel berelasi, dikelola lewat phpMyAdmin dan diakses dari PHP (PDO) memakai prepared statement.</p>
 
+              <div class="analysis-actions">
               <details class="project-analysis">
                 <summary>Analisis Bisnis: Aplikasi Pengaduan Masyarakat</summary>
                 <div class="analysis-body">
@@ -784,6 +899,90 @@
                   </div>
                 </div>
               </details>
+
+              <details class="project-analysis" data-label="🗄️ Lihat Penjelasan Database">
+                <summary>Penjelasan Database: Aplikasi Pengaduan Masyarakat</summary>
+                <div class="analysis-body">
+                  <h5>1. Gambaran Basis Data</h5>
+                  <p>Seluruh laporan, akun, tanggapan, dan riwayat status disimpan di basis data relasional MySQL dengan lima tabel yang saling berhubungan. Struktur dibuat melalui satu berkas SQL yang dapat diimpor ulang di phpMyAdmin, sehingga basis data mudah dipasang dan dipulihkan.</p>
+                  <table class="analysis-table">
+                    <tr><th>Komponen</th><th>Yang Digunakan</th></tr>
+                    <tr><td>DBMS</td><td>MySQL (MariaDB 10.4 pada XAMPP), mesin penyimpanan InnoDB, charset utf8mb4</td></tr>
+                    <tr><td>Pengelolaan</td><td>phpMyAdmin 5.2 dan SQL</td></tr>
+                    <tr><td>Akses dari aplikasi</td><td>PHP 8 (PDO) dengan prepared statement</td></tr>
+                    <tr><td>Perancangan</td><td>ERD dan flowchart alur pengaduan</td></tr>
+                  </table>
+
+                  <h5>2. Kebutuhan Data</h5>
+                  <ul>
+                    <li>Akun dengan peran berbeda: masyarakat, petugas, dan admin.</li>
+                    <li>Laporan lengkap dengan kategori, lokasi, tanggal kejadian, foto, dan status.</li>
+                    <li>Tanggapan petugas atas setiap laporan.</li>
+                    <li>Catatan setiap perubahan status agar laporan dapat ditelusuri dari masuk hingga selesai.</li>
+                  </ul>
+
+                  <h5>3. Struktur Tabel &amp; Relasi</h5>
+                  <table class="analysis-table">
+                    <tr><th>Tabel</th><th>Fungsi</th><th>Kunci &amp; Relasi</th></tr>
+                    <tr><td>users</td><td>Akun masyarakat, petugas, dan admin</td><td>PK id; UNIQUE email dan nik</td></tr>
+                    <tr><td>kategori</td><td>Jenis masalah yang dilaporkan</td><td>PK id; UNIQUE nama</td></tr>
+                    <tr><td>pengaduan</td><td>Data laporan, status, dan kode tiket</td><td>PK id; UNIQUE kode_tiket; FK user_id ke users, kategori_id ke kategori, petugas_id ke users</td></tr>
+                    <tr><td>tanggapan</td><td>Balasan petugas pada laporan</td><td>PK id; FK pengaduan_id ke pengaduan, petugas_id ke users</td></tr>
+                    <tr><td>riwayat_status</td><td>Jejak perubahan status laporan</td><td>PK id; FK pengaduan_id ke pengaduan, diubah_oleh ke users</td></tr>
+                  </table>
+
+                  <h5>4. Aturan Integritas Data</h5>
+                  <ul>
+                    <li><strong>CASCADE:</strong> laporan ikut terhapus bersama akun pelapornya.</li>
+                    <li><strong>RESTRICT:</strong> kategori yang masih dipakai laporan tidak dapat dihapus.</li>
+                    <li><strong>SET NULL:</strong> laporan tetap ada saat akun petugas dihapus.</li>
+                    <li><strong>ENUM dan UNIQUE:</strong> status dan peran hanya menerima nilai yang diizinkan, dan email, NIK, serta kode tiket tidak boleh ganda.</li>
+                    <li><strong>Index</strong> pada kolom status dan pengguna agar pencarian tetap cepat.</li>
+                  </ul>
+
+                  <h5>5. Contoh Query SQL</h5>
+                  <p><strong>JOIN:</strong> antrean laporan yang menunggu verifikasi, terlama lebih dulu.</p>
+                  <pre><code>SELECT p.kode_tiket, p.judul, k.nama AS kategori,
+       u.nama AS pelapor, p.created_at
+FROM pengaduan p
+JOIN users u    ON u.id = p.user_id
+JOIN kategori k ON k.id = p.kategori_id
+WHERE p.status = 'menunggu'
+ORDER BY p.created_at ASC;</code></pre>
+                  <p><strong>UPDATE aman:</strong> status hanya berubah jika masih sama seperti saat halaman dibuka, lalu dicatat ke riwayat.</p>
+                  <pre><code>UPDATE pengaduan
+SET status = 'diverifikasi', updated_at = NOW()
+WHERE id = ? AND status = 'menunggu';
+
+INSERT INTO riwayat_status (pengaduan_id, status, catatan, diubah_oleh)
+VALUES (?, 'diverifikasi', 'Laporan terverifikasi oleh petugas', ?);</code></pre>
+                  <p><strong>GROUP BY:</strong> rekap jumlah laporan per kategori untuk dasbor.</p>
+                  <pre><code>SELECT k.nama, COUNT(p.id) AS jumlah
+FROM kategori k
+LEFT JOIN pengaduan p ON p.kategori_id = k.id
+GROUP BY k.id, k.nama
+ORDER BY jumlah DESC;</code></pre>
+
+                  <h5>6. Keamanan Data</h5>
+                  <ul>
+                    <li>Password disimpan sebagai hash (bcrypt), bukan teks asli.</li>
+                    <li>Prepared statement pada semua query untuk mencegah SQL injection.</li>
+                    <li>Setiap pengguna hanya dapat membuka laporannya sendiri, dan halaman petugas dibatasi berdasarkan peran.</li>
+                  </ul>
+
+                  <h5>7. Dokumentasi &amp; Penelusuran</h5>
+                  <p>Setiap laporan memiliki kode tiket dan riwayat status bertanda waktu di tabel <em>riwayat_status</em>. Dengan begitu perkembangan laporan terdokumentasi dan dapat dilacak oleh pelapor maupun petugas.</p>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>8. Diagram Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/pengaduan/erd.png" alt="ERD aplikasi pengaduan masyarakat"><figcaption>ERD (Entity Relationship Diagram)</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              </div>
 
               <div class="project-links">
                 <a href="http://laporwarga.wuaze.com/" class="project-link" target="_blank" rel="noopener noreferrer">
@@ -1113,13 +1312,13 @@
             <span class="contact-arrow"></span>
           </a>
           
-          <a href="https://wa.me/6285811484223"
+          <a href="https://wa.me/6285811484223?text=Halo%20Putri%2C%20saya%20melihat%20portofolio%20Anda%20dan%20ingin%20berdiskusi."
              class="contact-social"
              target="_blank"
              rel="noopener noreferrer"
-             aria-label="whatsapp">
+             aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
-            <span>whatsapp</span>
+            <span>WhatsApp</span>
             <span class="contact-arrow"></span>
           </a>
 
@@ -1218,7 +1417,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const button = document.createElement("button");
             button.type = "button";
             button.className = "analysis-btn";
-            button.textContent = "📊 Lihat Analisis Bisnis";
+            button.textContent = details.getAttribute("data-label") || "📊 Lihat Analisis Bisnis";
             button.setAttribute("aria-haspopup", "dialog");
 
             button.addEventListener("click", function () {

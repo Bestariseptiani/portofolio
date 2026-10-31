@@ -948,3 +948,50 @@ body.analysis-open { overflow: hidden; }
 .project-content .project-tech { margin-top: 0; }
 .project-content .analysis-btn { margin-top: auto; }
 .analysis-btn + .project-links { margin-top: 0; }
+
+/* ========================================
+   DATABASE DI KARTU PROYEK & JENDELA PENJELASAN DATABASE
+======================================== */
+
+.project-database {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+.project-database i { margin-top: 4px; color: var(--red); }
+.project-database strong { color: var(--ink); }
+
+.analysis-body code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: var(--red-dark);
+  background: var(--red-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .9em;
+}
+.analysis-body pre {
+  margin: 8px 0 14px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border-radius: 12px;
+  color: #e2e8f0;
+  background: #1e1417;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.analysis-body pre code { padding: 0; color: inherit; background: none; font-size: inherit; }
+
+/* Dua tombol berdampingan: Analisis Bisnis & Penjelasan Database */
+.project-content .analysis-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+}
+.analysis-actions .analysis-btn { flex: 1 1 190px; width: auto; margin-top: 0; }
+.analysis-actions + .project-links { margin-top: 0; }
