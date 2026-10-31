@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio showcasing education, experience, organization activities, and projects.">
+  <meta name="description" content="Portofolio pribadi yang menampilkan pendidikan, pengalaman, kegiatan organisasi, proyek, sertifikat, dan publikasi.">
   <title>Portofolio | Web Developer</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style.css?v=2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <nav class="navbar" id="navbar">
-    <a class="brand" href="#about" aria-label="Portfolio home"><b>PORTO<span class="red">FOLIO.</span></b></a>
+    <a class="brand" href="#about" aria-label="Beranda portofolio"><b>PORTO<span class="red">FOLIO.</span></b></a>
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about" class="nav-link active">About Me</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#organization" class="nav-link">Organization</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#publications" class="nav-link">Publications</a></li>
-      <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
+      <li><a href="#about" class="nav-link active">Tentang Saya</a></li>
+      <li><a href="#education" class="nav-link">Pendidikan</a></li>
+      <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+      <li><a href="#organization" class="nav-link">Organisasi</a></li>
+      <li><a href="#projects" class="nav-link">Proyek</a></li>
+      <li><a href="#certificates" class="nav-link">Sertifikat</a></li>
+      <li><a href="#publications" class="nav-link">Publikasi</a></li>
+      <li><a href="#contact" class="nav-contact">Hubungi Saya ↗</a></li>
     </ul>
   </nav>
 
@@ -29,23 +30,23 @@
     <section class="hero" id="about">
       <div class="hero-container">
         <div class="hero-content">
-          <p class="hero-greeting">HELLO, WELCOME TO MY PORTFOLIO</p>
-          <h1>Hi, I'm <span class="hero-name">Putri</span><br><span class="hero-role">Information Systems Graduate</span></h1>
-          <p class="hero-description">I am a graduate with a Diploma (D3) degree in Information Systems from Universitas Pembangunan Nasional Veteran Jakarta, achieving a GPA of 3.88. During my studies, I was active in the Information Systems student association, serving in the Media and Communication department within the Creative division. I also completed an internship at Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) as a Junior Web Programmer. My skills include web development, data analysis, and creative design. I communicate effectively, work well in a team, and adapt quickly.</p>
+          <p class="hero-greeting">HALO, SELAMAT DATANG DI PORTOFOLIO SAYA</p>
+          <h1>Halo, saya <span class="hero-name">Putri</span><br><span class="hero-role">Lulusan Sistem Informasi</span></h1>
+          <p class="hero-description">Saya merupakan lulusan D3 Sistem Informasi Universitas Pembangunan Nasional Veteran Jakarta dengan IPK 3,88. Memiliki ketertarikan pada Business Analysis, Business Process Management, dan Process Improvement. Saya memiliki pengalaman mengembangkan sistem informasi, menganalisis kebutuhan pengguna, mengidentifikasi permasalahan proses operasional, serta merancang solusi digital. Melalui berbagai proyek, saya mempelajari bagaimana teknologi dapat digunakan untuk menyederhanakan alur kerja, meningkatkan efisiensi operasional, dan mendukung pengambilan keputusan berbasis data.</p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">Explore My Projects ↗</a>
-                <a href="assets/CV - Mas Roro Putri Rhilowati Septiani.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">My CV</a>
-            <a href="#contact" class="btn-secondary">Contact Me</a>
+            <a href="#projects" class="btn-primary">Lihat Proyek Saya ↗</a>
+            <a href="assets/CV - Mas Roro Putri Rhilowati Septiani.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">CV Saya</a>
+            <a href="#contact" class="btn-secondary">Hubungi Saya</a>
           </div>
           <div class="hero-cards">
-            <div class="hero-card"><span class="card-icon">01</span><h3>Education</h3><p>Information Systems</p></div>
-            <div class="hero-card"><span class="card-icon">02</span><h3>Development</h3><p>Web Development</p></div>
-            <div class="hero-card"><span class="card-icon">03</span><h3>Creative</h3><p>Design &amp; Media</p></div>
+            <div class="hero-card"><span class="card-icon">01</span><h3>Pendidikan</h3><p>Sistem Informasi</p></div>
+            <div class="hero-card"><span class="card-icon">02</span><h3>web</h3><p>development</p></div>
+            <div class="hero-card"><span class="card-icon">03</span><h3>data</h3><p>bisnis</p></div>
           </div>
         </div>
         <div class="hero-image">
           <div class="image-frame"><img src="assets/profile.jpg" alt="Foto profil Putri" class="profile-photo" onerror="this.style.display='none'"></div>
-          <p class="image-caption"><span class="status-dot"></span> Open to opportunities</p>
+          <p class="image-caption"><span class="status-dot"></span> Terbuka untuk peluang kerja</p>
         </div>
       </div>
     </section>
@@ -53,222 +54,221 @@
     <section class="education section" id="education">
       <div class="section-container">
         <header class="section-heading education-heading">
-          <p class="section-label">MY BACKGROUND</p><h2>Educ<span>ation</span></h2>
-          <p class="section-description">My academic journey and educational background.</p>
+          <p class="section-label">LATAR BELAKANG SAYA</p><h2>Pendi<span>dikan</span></h2>
+          <p class="section-description">Perjalanan akademik dan latar belakang pendidikan saya.</p>
         </header>
         <div class="education-cards">
           <article class="education-card">
             <div class="education-logo"><img src="assets/upnvj.jpg" alt="Logo Universitas Pembangunan Nasional Veteran Jakarta" loading="lazy"></div>
             <div class="education-content">
               <span class="education-year">2023 – 2026</span>
-              <h3>D3 Information Systems</h3><h4>Universitas Pembangunan Nasional “Veteran” Jakarta · GPA 3.88</h4>
-              <p>Participated in the D3 Information Systems Student Association and faculty events, including FIKFAIR and FKBMIK. Served as a mentor for Patribera 2024 and joined a supplementary Web Development class with KSM Multimedia to strengthen programming skills.</p>
-              <h5>Selected Publications</h5>
+              <h3>D3 Sistem Informasi</h3><h4>Universitas Pembangunan Nasional “Veteran” Jakarta · IPK 3,88</h4>
+              <p>Aktif di Himpunan Mahasiswa D3 Sistem Informasi dan berbagai kegiatan fakultas, antara lain FIKFAIR dan FKBMIK. Menjadi mentor pada Patribera 2024 serta mengikuti kelas tambahan Web Development bersama KSM Multimedia untuk memperdalam kemampuan pemrograman.</p>
+              <h5>Publikasi Pilihan</h5>
               <ol class="publication-list">
                 <li>PIGO (Pizza Go): Implementasi Aplikasi Berbasis Website Menggunakan Metode Waterfall.</li>
                 <li>Manajemen Proyek Sistem Parkir Cerdas Berbasis Radio Frequency Identification (RFID) Menggunakan Pendekatan Work Breakdown Structure (WBS) dan Network Diagram.</li>
               </ol>
-              <p><strong>Final Project:</strong> Aplikasi Pemesanan Menu Berbasis QR Code dengan Algoritma Dynamic Estimated Time Arrival (Studi Kasus: Warmindo 25).</p>
+              <p><strong>Tugas Akhir:</strong> Aplikasi Pemesanan Menu Berbasis QR Code dengan Algoritma Dynamic Estimated Time Arrival (Studi Kasus: Warmindo 25).</p>
             </div>
           </article>
           <article class="education-card">
             <div class="education-logo"><img src="assets/sekolah.jpeg" alt="Logo SMK Fatahillah Cileungsi" loading="lazy"></div>
             <div class="education-content">
               <span class="education-year">2020 – 2023</span>
-              <h3>Software Engineering</h3><h4>SMK Fatahillah Cileungsi · Score 82.6</h4>
-              <p>Gained practical experience in web development using HTML, PHP, MySQL, and JavaScript, as well as application development, database management, and programming logic. Developed a mobile application titled “Pahlawan” featuring biographies and historical information about Indonesian national heroes. Completed a competency examination by developing a desktop-based public complaint system.</p>
+              <h3>Rekayasa Perangkat Lunak</h3><h4>SMK Fatahillah Cileungsi · 82,92</h4>
+              <p>Memperoleh pengalaman praktik pengembangan web menggunakan HTML, PHP, MySQL, dan JavaScript, serta pengembangan aplikasi, pengelolaan basis data, dan logika pemrograman. Mengembangkan aplikasi mobile berjudul “Pahlawan” yang memuat biografi dan informasi sejarah pahlawan nasional Indonesia. Menyelesaikan uji kompetensi dengan membuat aplikasi pengaduan masyarakat berbasis desktop.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-<section class="experience section" id="experience">
-    <div class="section-container">
+    <section class="experience section" id="experience">
+      <div class="section-container">
         <header class="section-heading">
-            <p class="section-label">MY JOURNEY</p>
-            <h2>Experience</h2>
-            <p class="section-description">My professional experience, technical projects, and continuous learning journey.</p>
+          <p class="section-label">PERJALANAN SAYA</p>
+          <h2>Pengalaman</h2>
+          <p class="section-description">Pengalaman profesional, proyek teknis, dan perjalanan belajar saya yang berkelanjutan.</p>
         </header>
 
         <div class="experience-cards">
 
-            <!-- KEMENDIKDASMEN -->
-            <article class="experience-card">
-                <div class="experience-top">
-                    <div class="experience-logo">
-                        <img src="assets/magang1.jpeg" alt="Kemendikdasmen logo" loading="lazy">
-                    </div>
-                    <span class="experience-period">Sep 2025 – Jan 2026</span>
-                </div>
+          <!-- KEMENDIKDASMEN -->
+          <article class="experience-card">
+            <div class="experience-top">
+              <div class="experience-logo">
+                <img src="assets/magang1.jpeg" alt="Logo Kemendikdasmen" loading="lazy">
+              </div>
+              <span class="experience-period">Sep 2025 – Jan 2026</span>
+            </div>
 
-                <h3>Junior Web Programmer Intern</h3>
-                <h4>Kementerian Pendidikan Dasar dan Menengah</h4>
-                <p class="experience-type">Web Development Internship</p>
+            <h3>Magang Junior Web Programmer</h3>
+            <h4>Kementerian Pendidikan Dasar dan Menengah</h4>
+            <p class="experience-type">Magang Pengembangan Web</p>
 
-                <ul>
-                    <li>Contributed to the development of an educational book website using HTML, CSS, JavaScript, and PHP to improve access to digital learning resources.</li>
-                    <li>Developed a book search feature and digital catalog to help users discover educational publications more efficiently.</li>
-                    <li>Conducted functional testing and debugging while evaluating website responsiveness and usability across different devices.</li>
-                </ul>
+            <ul>
+              <li>Berkontribusi dalam pengembangan website buku pendidikan menggunakan HTML, CSS, JavaScript, dan PHP untuk memperluas akses terhadap sumber belajar digital.</li>
+              <li>Mengembangkan fitur pencarian buku dan katalog digital agar pengguna lebih mudah menemukan publikasi pendidikan.</li>
+              <li>Melakukan pengujian fungsional dan debugging, serta mengevaluasi responsivitas dan kemudahan penggunaan website di berbagai perangkat.</li>
+            </ul>
 
-                <a href="https://www.linkedin.com/company/kementrian-pendidikan-dan-kebudayaan/home/"
-                   class="experience-demo"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fas fa-external-link-alt"></i> Social Media
-                </a>
-            </article>
+            <a href="https://www.linkedin.com/company/kementrian-pendidikan-dan-kebudayaan/home/"
+               class="experience-demo"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Media Sosial
+            </a>
+          </article>
 
-            <!-- KSM MULTIMEDIA -->
-            <article class="experience-card">
-                <div class="experience-top">
-                    <div class="experience-logo">
-                        <img src="assets/ksm.jpeg" alt="KSM Multimedia UPNVJ logo" loading="lazy">
-                    </div>
-                    <span class="experience-period">Feb 2024 – Dec 2024</span>
-                </div>
+          <!-- KSM MULTIMEDIA -->
+          <article class="experience-card">
+            <div class="experience-top">
+              <div class="experience-logo">
+                <img src="assets/ksm.jpeg" alt="Logo KSM Multimedia UPNVJ" loading="lazy">
+              </div>
+              <span class="experience-period">Feb 2024 – Des 2024</span>
+            </div>
 
-                <h3>Web Development Participant</h3>
-                <h4>KSM Multimedia UPN Veteran Jakarta</h4>
-                <p class="experience-type">Web Development Training &amp; Collaborative Project</p>
+            <h3>Peserta Kelas Web Development</h3>
+            <h4>KSM Multimedia UPN Veteran Jakarta</h4>
+            <p class="experience-type">Pelatihan Web Development &amp; Proyek Kolaboratif</p>
 
-                <ul>
-                    <li>Completed a Web Development learning program focused on strengthening full-stack development fundamentals and practical programming skills.</li>
-                    <li>Collaborated with team members to build a website using PHP and Laravel, applying web development concepts in a collaborative project environment.</li>
-                    <li>Strengthened problem-solving, teamwork, and the ability to translate project requirements into functional web components.</li>
-                </ul>
+            <ul>
+              <li>Menyelesaikan program pembelajaran Web Development yang berfokus pada penguatan dasar-dasar pengembangan full-stack dan keterampilan pemrograman praktis.</li>
+              <li>Berkolaborasi dengan anggota tim membangun website menggunakan PHP dan Laravel sebagai penerapan konsep pengembangan web dalam proyek kelompok.</li>
+              <li>Memperkuat kemampuan pemecahan masalah, kerja sama tim, dan kemampuan menerjemahkan kebutuhan proyek menjadi komponen website yang berfungsi.</li>
+            </ul>
 
-                <a href="https://www.instagram.com/multimediaupnvj/"
-                   class="experience-demo"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fas fa-external-link-alt"></i> Social Media
-                </a>
-            </article>
+            <a href="https://www.instagram.com/multimediaupnvj/"
+               class="experience-demo"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Media Sosial
+            </a>
+          </article>
 
-            <!-- CV ANNORA VEDDIRA -->
-            <article class="experience-card">
-                <div class="experience-top">
-                    <div class="experience-logo">
-                        <img src="assets/annora.jpeg" alt="CV Annora Veddira logo" loading="lazy">
-                    </div>
-                    <span class="experience-period">Nov 2021 – Present</span>
-                </div>
+          <!-- CV ANNORA VEDDIRA -->
+          <article class="experience-card">
+            <div class="experience-top">
+              <div class="experience-logo">
+                <img src="assets/annora.jpeg" alt="Logo CV Annora Veddira" loading="lazy">
+              </div>
+              <span class="experience-period">Nov 2021 – Sekarang</span>
+            </div>
 
-                <h3>Digital Marketing &amp; Property Promotion</h3>
-                <h4>CV Annora Veddira</h4>
-                <p class="experience-type">Digital Marketing &amp; Content Creation</p>
+            <h3>Digital Marketing &amp; Promosi Properti</h3>
+            <h4>CV Annora Veddira</h4>
+            <p class="experience-type">Digital Marketing &amp; Pembuatan Konten</p>
 
-                <ul>
-                    <li>Created visual content and promotional materials for social media to support property marketing and strengthen digital brand presence.</li>
-                    <li>Organized and presented property information into clear, engaging promotional content to help audiences understand listing details.</li>
-                    <li>Maintained visual consistency across marketing materials to support a professional and recognizable brand identity.</li>
-                </ul>
+            <ul>
+              <li>Membuat konten visual dan materi promosi untuk media sosial guna mendukung pemasaran properti dan memperkuat citra merek secara digital.</li>
+              <li>Menyusun informasi properti menjadi konten promosi yang jelas dan menarik sehingga calon pembeli mudah memahami detail unit yang ditawarkan.</li>
+              <li>Menjaga konsistensi visual pada seluruh materi pemasaran agar identitas merek tampak profesional dan mudah dikenali.</li>
+            </ul>
 
-                <a href="https://www.instagram.com/annora.property/"
-                   class="experience-demo"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fas fa-external-link-alt"></i> Social Media
-                </a>
-            </article>
+            <a href="https://www.instagram.com/annora.property/"
+               class="experience-demo"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Media Sosial
+            </a>
+          </article>
 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <section class="organization section" id="organization">
       <div class="section-container">
-        <header class="section-heading"><p class="section-label">MY ACTIVITIES</p><h2>Organization Experience</h2><p class="section-description">My contributions and creative works in student organizations.</p></header>
+        <header class="section-heading"><p class="section-label">KEGIATAN SAYA</p><h2>Pengalaman Organisasi</h2><p class="section-description">Kontribusi dan karya kreatif saya dalam organisasi kemahasiswaan.</p></header>
         <div class="organization-cards">
-          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Sep 2024 – Sep 2025</p><h3>HIMA D3 Sistem Informasi</h3><h4>Creative Division Staff</h4></div><span class="organization-number">01</span></div><p class="organization-description">Created visual designs and publication materials for student activities, organizational events, and social media content to support communication and promotion.</p><h5 class="gallery-title">Selected Works</h5><div class="organization-gallery"><img src="assets/hima1.jpg" alt="HIMA design 1" loading="lazy"><img src="assets/hima2.jpg" alt="HIMA design 2" loading="lazy"><img src="assets/hima4.jpg" alt="HIMA design 3" loading="lazy"></div></article>
-          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Study Visit Event</p><h3>Studi Banding</h3><h4>Head of Media and Communication Division</h4></div><span class="organization-number">02</span></div><p class="organization-description">Coordinated the media and communication team, delegated tasks, and managed publication materials to support event communication and promotion.</p><h5 class="gallery-title">Selected Works</h5><div class="organization-gallery"><img src="assets/hima3.jpg" alt="Study visit design 1" loading="lazy"><img src="assets/hima5.jpg" alt="Study visit design 2" loading="lazy"></div></article>
-
-<article class="organization-card">
-    <div class="organization-info">
-        <div>
-            <p class="organization-period">Feb 2024 – Dec 2024</p>
-            <h3>KSM Multimedia</h3>
-            <h4>Web Development Participant</h4>
-        </div>
-        <span class="organization-number">03</span>
-    </div>
-
-    <div class="organization-description">
-        <ul>
-            <li>Participated in web development training sessions covering website development concepts, front-end and back-end fundamentals, and the use of PHP and Laravel.</li>
-            <li>Applied the knowledge gained throughout the training by collaborating with team members to plan, develop, and complete a website project as the final class assignment.</li>
-            <li>Worked collaboratively to divide tasks, share ideas, solve technical problems, and integrate different components into a functional website.</li>
-            <li>Strengthened practical programming skills, teamwork, communication, and problem-solving abilities through hands-on learning and project-based collaboration.</li>
-        </ul>
-    </div>
-</article>
-
-<article class="organization-card">
-    <div class="organization-info">
-        <div>
-            <p class="organization-period">Event Committee</p>
-            <h3>FIKFAIR</h3>
-            <h4>Event Division Staff</h4>
-        </div>
-        <span class="organization-number">04</span>
-    </div>
-
-    <div class="organization-description">
-        <ul>
-            <li>Contributed to the planning and preparation of FIKFAIR activities to support the successful execution of the event.</li>
-            <li>Assisted in preparing the event rundown, organizing activity sequences, and ensuring that each session followed the established schedule.</li>
-            <li>Coordinated with fellow committee members and other divisions to align event requirements, communicate updates, and support operational needs.</li>
-            <li>Helped manage on-site event activities, responded to changing situations, and supported the committee in maintaining an organized event flow.</li>
-            <li>Developed teamwork, communication, time management, and coordination skills through direct involvement in student event organization.</li>
-        </ul>
-    </div>
-</article>
-
-<article class="organization-card">
-    <div class="organization-info">
-        <div>
-            <p class="organization-period">Event Committee</p>
-            <h3>FKBMIK</h3>
-            <h4>Event Division Staff</h4>
-        </div>
-        <span class="organization-number">05</span>
-    </div>
-
-    <div class="organization-description">
-        <ul>
-            <li>Contributed to the planning and execution of FKBMIK, a collaborative event involving three campuses: UPNVJ, UPNVJT, and UPNVYK.</li>
-            <li>Assisted in preparing the event rundown, organizing activity schedules, and arranging program sequences to support smooth event execution.</li>
-            <li>Collaborated with committee members to coordinate event preparations, communicate activity requirements, and ensure alignment between different teams.</li>
-            <li>Supported the coordination of event activities involving participants from the three campuses, helping maintain an organized and engaging event environment.</li>
-            <li>Strengthened teamwork, communication, time management, and event coordination skills through involvement in a multi-campus student event.</li>
-        </ul>
-    </div>
-</article>
-
+          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Sep 2024 – Sep 2025</p><h3>HIMA D3 Sistem Informasi</h3><h4>Staf Divisi Kreatif</h4></div><span class="organization-number">01</span></div><p class="organization-description">Membuat desain visual dan materi publikasi untuk kegiatan mahasiswa, acara organisasi, dan konten media sosial guna mendukung komunikasi dan promosi.</p><h5 class="gallery-title">Karya Pilihan</h5><div class="organization-gallery"><img src="assets/hima1.jpg" alt="Desain HIMA 1" loading="lazy"><img src="assets/hima2.jpg" alt="Desain HIMA 2" loading="lazy"><img src="assets/hima4.jpg" alt="Desain HIMA 3" loading="lazy"></div></article>
+          <article class="organization-card"><div class="organization-info"><div><p class="organization-period">Acara Studi Banding</p><h3>Studi Banding</h3><h4>Ketua Divisi Media dan Komunikasi</h4></div><span class="organization-number">02</span></div><p class="organization-description">Mengoordinasikan tim media dan komunikasi, membagi tugas, serta mengelola materi publikasi untuk mendukung komunikasi dan promosi acara.</p><h5 class="gallery-title">Karya Pilihan</h5><div class="organization-gallery"><img src="assets/hima3.jpg" alt="Desain Studi Banding 1" loading="lazy"><img src="assets/hima5.jpg" alt="Desain Studi Banding 2" loading="lazy"></div></article>
 
           <article class="organization-card">
-    <div class="organization-info">
-        <div>
-            <p class="organization-period">Student Orientation Program</p>
-            <h3>PATRIBERA UPNVJ</h3>
-            <h4>Student Mentor</h4>
-        </div>
-        <span class="organization-number">05</span>
-    </div>
+            <div class="organization-info">
+              <div>
+                <p class="organization-period">Feb 2024 – Des 2024</p>
+                <h3>KSM Multimedia</h3>
+                <h4>Peserta Kelas Web Development</h4>
+              </div>
+              <span class="organization-number">03</span>
+            </div>
 
-    <p class="organization-description">
-        Mentored and guided new students during the PATRIBERA UPNVJ program,
-        helping them adapt to university life, understand campus culture,
-        and become familiar with the academic environment.
-    </p>
+            <div class="organization-description">
+              <ul>
+                <li>Mengikuti sesi pelatihan web development yang mencakup konsep pengembangan website, dasar front-end dan back-end, serta penggunaan PHP dan Laravel.</li>
+                <li>Menerapkan ilmu yang diperoleh dengan berkolaborasi bersama anggota tim untuk merencanakan, mengembangkan, dan menyelesaikan proyek website sebagai tugas akhir kelas.</li>
+                <li>Bekerja sama dalam membagi tugas, bertukar ide, menyelesaikan kendala teknis, dan mengintegrasikan berbagai komponen menjadi website yang berfungsi.</li>
+                <li>Memperkuat keterampilan pemrograman praktis, kerja sama tim, komunikasi, dan pemecahan masalah melalui pembelajaran langsung berbasis proyek.</li>
+              </ul>
+            </div>
+          </article>
 
-    <h5 class="gallery-title">Program Documentation</h5>
-    <div class="organization-gallery">
-        <img src="assets/patribera1.jpg" alt="PATRIBERA UPNVJ documentation 1" loading="lazy"><img src="assets/patribera3.jpg" alt="PATRIBERA UPNVJ documentation 2" loading="lazy"><img src="assets/patribera4.jpg" alt="PATRIBERA UPNVJ documentation 3" loading="lazy">
-    </div>
-</article>
+          <article class="organization-card">
+            <div class="organization-info">
+              <div>
+                <p class="organization-period">Kepanitiaan Acara</p>
+                <h3>FIKFAIR</h3>
+                <h4>Staf Divisi Acara</h4>
+              </div>
+              <span class="organization-number">04</span>
+            </div>
+
+            <div class="organization-description">
+              <ul>
+                <li>Berkontribusi dalam perencanaan dan persiapan kegiatan FIKFAIR demi kelancaran pelaksanaan acara.</li>
+                <li>Membantu menyusun rundown acara, mengatur urutan kegiatan, dan memastikan setiap sesi berjalan sesuai jadwal.</li>
+                <li>Berkoordinasi dengan sesama panitia dan divisi lain untuk menyelaraskan kebutuhan acara, menyampaikan informasi terbaru, dan mendukung kebutuhan operasional.</li>
+                <li>Membantu mengelola kegiatan di lokasi acara, menyesuaikan diri dengan perubahan situasi, dan mendukung kepanitiaan menjaga alur acara tetap tertib.</li>
+                <li>Mengembangkan kemampuan kerja sama tim, komunikasi, manajemen waktu, dan koordinasi melalui keterlibatan langsung dalam penyelenggaraan acara mahasiswa.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="organization-card">
+            <div class="organization-info">
+              <div>
+                <p class="organization-period">Kepanitiaan Acara</p>
+                <h3>FKBMIK</h3>
+                <h4>Staf Divisi Acara</h4>
+              </div>
+              <span class="organization-number">05</span>
+            </div>
+
+            <div class="organization-description">
+              <ul>
+                <li>Berkontribusi dalam perencanaan dan pelaksanaan FKBMIK, acara kolaboratif yang melibatkan tiga kampus: UPNVJ, UPNVJT, dan UPNVYK.</li>
+                <li>Membantu menyusun rundown acara, mengatur jadwal kegiatan, dan menata urutan program agar acara berjalan lancar.</li>
+                <li>Berkolaborasi dengan anggota panitia untuk mengoordinasikan persiapan acara, menyampaikan kebutuhan kegiatan, dan menjaga keselarasan antartim.</li>
+                <li>Mendukung koordinasi kegiatan yang melibatkan peserta dari tiga kampus sehingga suasana acara tetap tertata dan menarik.</li>
+                <li>Memperkuat kerja sama tim, komunikasi, manajemen waktu, dan koordinasi acara melalui keterlibatan dalam acara mahasiswa lintas kampus.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="organization-card">
+            <div class="organization-info">
+              <div>
+                <p class="organization-period">Program Orientasi Mahasiswa</p>
+                <h3>PATRIBERA UPNVJ</h3>
+                <h4>Mentor Mahasiswa</h4>
+              </div>
+              <span class="organization-number">06</span>
+            </div>
+
+            <p class="organization-description">
+              Membimbing dan mendampingi mahasiswa baru dalam program PATRIBERA UPNVJ,
+              membantu mereka beradaptasi dengan kehidupan kampus, memahami budaya kampus,
+              dan mengenal lingkungan akademik.
+            </p>
+
+            <h5 class="gallery-title">Dokumentasi Program</h5>
+            <div class="organization-gallery">
+              <img src="assets/patribera1.jpg" alt="Dokumentasi PATRIBERA UPNVJ 1" loading="lazy"><img src="assets/patribera3.jpg" alt="Dokumentasi PATRIBERA UPNVJ 2" loading="lazy"><img src="assets/patribera4.jpg" alt="Dokumentasi PATRIBERA UPNVJ 3" loading="lazy">
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -276,97 +276,520 @@
     <section class="projects section" id="projects">
       <div class="section-container">
         <header class="section-heading">
-          <p class="section-label">MY WORK</p>
-          <h2>Projects</h2>
-          <p class="section-description">Selected web development and UI/UX projects I have worked on.</p>
+          <p class="section-label">KARYA SAYA</p>
+          <h2>Proyek</h2>
+          <p class="section-description">Pilihan proyek pengembangan web, desain UI/UX, dan analitik data yang pernah saya kerjakan, lengkap dengan analisis bisnisnya.</p>
         </header>
 
         <div class="project-cards">
+
+          <!-- 1. WARMINDO25 -->
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/warmindo (1).png" alt="Warmindo25 QR-based food ordering website" loading="lazy" onerror="this.style.display='none'">
+              <img src="assets/warmindo (1).png" alt="Website pemesanan makanan berbasis QR Code Warmindo25" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="project-content">
-              <p class="project-category">Full-Stack Web Development</p>
+              <p class="project-category">Pengembangan Web Full-Stack</p>
               <h3>Warmindo25</h3>
-              <p class="project-description">Developed a web-based food ordering system for Warmindo 25. The project supports digital menu ordering and applies an estimated arrival time approach to help users understand their order waiting time.</p>
-              <div class="project-tech"><span>JavaScript</span><span>PHP</span><span>CSS</span></div>
-              
-<div class="project-links">
-    <a href="https://github.com/Bestariseptiani/warmindo25"
-       class="project-link"
-       target="_blank"
-       rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
-        View github
-    </a>
-</div>
+              <p class="project-description">
+                Membangun sistem pemesanan makanan berbasis web untuk Warmindo 25. Pelanggan memindai QR Code di meja untuk melihat menu dan memesan langsung dari ponsel. Algoritma Dynamic Estimated Time of Arrival (ETA) menghitung estimasi waktu tunggu berdasarkan kapasitas dapur, sehingga pelanggan tahu kapan pesanan mereka siap.
+              </p>
+              <div class="project-tech">
+                <span>JavaScript</span><span>PHP</span><span>CSS</span><span>QR Code</span>
+              </div>
 
-            </div>
-          </article>
+              <details class="project-analysis">
+                <summary>Analisis Bisnis: Warmindo25</summary>
+                <div class="analysis-body">
+                  <h5>1. Latar Belakang &amp; Masalah Bisnis</h5>
+                  <p>Warmindo 25 melayani pesanan secara manual: pelanggan memanggil pelayan atau datang ke kasir, lalu pesanan dicatat dan diteruskan ke dapur. Pada jam ramai, proses ini rawan antrean panjang, kesalahan pencatatan, pesanan terlewat, dan pelanggan tidak mendapat kepastian waktu tunggu.</p>
+                  <ul>
+                    <li>Pencatatan pesanan manual memakan waktu dan rentan salah tulis.</li>
+                    <li>Dapur tidak memiliki gambaran beban kerja yang terukur.</li>
+                    <li>Pelanggan tidak tahu berapa lama harus menunggu, sehingga menurunkan kepuasan.</li>
+                    <li>Pemilik sulit merekap penjualan dan menu terlaris secara cepat.</li>
+                  </ul>
 
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/warista.png" alt="Warista user interface design" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="project-content">
-              <p class="project-category">UI/UX Design &amp; Front-End Development</p>
-              <h3>Warista</h3>
-              <p class="project-description">Designed the interface in Figma and developed the front end of a platform that guides users through preparing an heirship declaration letter. The platform presents the process in a clear, practical way and helps users understand the administrative steps involved.</p>
-              <div class="project-tech"><span>Figma</span><span>Front-End</span><span>UI/UX Design</span></div>
+                  <h5>2. Tujuan Bisnis</h5>
+                  <ul>
+                    <li>Mempercepat dan merapikan proses pemesanan serta mengurangi kesalahan pencatatan.</li>
+                    <li>Memberi kepastian waktu tunggu kepada pelanggan melalui estimasi yang dinamis.</li>
+                    <li>Membantu dapur mengatur antrean sesuai kapasitas.</li>
+                    <li>Menyediakan data transaksi yang rapi sebagai dasar evaluasi usaha.</li>
+                  </ul>
+
+                  <h5>3. Pemangku Kepentingan (Stakeholder)</h5>
+                  <table class="analysis-table">
+                    <tr><th>Pihak</th><th>Peran &amp; Kebutuhan</th></tr>
+                    <tr><td>Pelanggan</td><td>Memesan dengan mudah, melihat menu, dan mengetahui estimasi waktu tunggu.</td></tr>
+                    <tr><td>Kasir / Pelayan</td><td>Menerima dan memantau pesanan tanpa pencatatan manual.</td></tr>
+                    <tr><td>Dapur</td><td>Melihat antrean pesanan dan memperbarui status pengerjaan.</td></tr>
+                    <tr><td>Pemilik / Admin</td><td>Mengelola menu dan harga, serta memantau rekap pesanan.</td></tr>
+                  </table>
+
+                  <h5>4. Analisis Proses: Kondisi Saat Ini vs Solusi</h5>
+                  <table class="analysis-table">
+                    <tr><th>Kondisi Saat Ini (As-Is)</th><th>Solusi (To-Be)</th></tr>
+                    <tr><td>Pelanggan memanggil pelayan untuk memesan.</td><td>Pelanggan memindai QR Code meja dan memesan sendiri.</td></tr>
+                    <tr><td>Pesanan ditulis tangan lalu diteruskan ke dapur.</td><td>Pesanan masuk otomatis ke sistem dan tampil di dapur.</td></tr>
+                    <tr><td>Waktu tunggu tidak diketahui.</td><td>Estimasi waktu tunggu dihitung otomatis oleh algoritma Dynamic ETA.</td></tr>
+                    <tr><td>Rekap penjualan dihitung manual.</td><td>Data pesanan tersimpan di basis data dan siap direkap.</td></tr>
+                  </table>
+
+                  <h5>5. Kebutuhan Fungsional</h5>
+                  <ul>
+                    <li>Identifikasi meja melalui QR Code.</li>
+                    <li>Menampilkan daftar menu, kategori, harga, dan keranjang pesanan.</li>
+                    <li>Pengiriman pesanan dan pelacakan status (diterima, diproses, siap).</li>
+                    <li>Perhitungan estimasi waktu tunggu secara dinamis.</li>
+                    <li>Pengelolaan menu dan pesanan oleh admin / dapur.</li>
+                  </ul>
+
+                  <h5>6. Kebutuhan Non-Fungsional</h5>
+                  <ul>
+                    <li>Tampilan responsif dan nyaman dipakai di ponsel.</li>
+                    <li>Antarmuka sederhana agar pelanggan dari berbagai usia dapat memakainya tanpa pelatihan.</li>
+                    <li>Respons sistem cepat saat jam ramai dan data pesanan tersimpan dengan aman.</li>
+                  </ul>
+
+                  <h5>7. Logika Dynamic ETA</h5>
+                  <p>Estimasi waktu tunggu tidak dibuat tetap. Sistem mempertimbangkan jumlah pesanan yang sedang antre, waktu pengerjaan tiap menu, dan kapasitas dapur pada saat itu. Semakin padat antrean, semakin panjang estimasi yang ditampilkan, sehingga angka yang diberikan lebih realistis dibandingkan perkiraan manual.</p>
+
+                  <h5>8. Metode Pengembangan</h5>
+                  <p>Sistem dikembangkan dengan metode Waterfall melalui tahap analisis kebutuhan, perancangan sistem, implementasi, pengujian, dan pemeliharaan. Pendekatan ini dipilih karena kebutuhan sistem relatif jelas dan terdefinisi sejak awal.</p>
+
+                  <h5>9. Nilai &amp; Manfaat Bisnis</h5>
+                  <ul>
+                    <li>Proses pemesanan lebih cepat dan minim kesalahan.</li>
+                    <li>Kepuasan pelanggan meningkat karena ada kepastian waktu tunggu.</li>
+                    <li>Beban kerja kasir dan pelayan berkurang.</li>
+                    <li>Pemilik memperoleh data pesanan yang terstruktur untuk evaluasi dan pengambilan keputusan.</li>
+                  </ul>
+
+                  <h5>10. Indikator Keberhasilan</h5>
+                  <ul>
+                    <li>Berkurangnya kesalahan pencatatan pesanan.</li>
+                    <li>Berkurangnya waktu dari pesanan masuk hingga sampai ke dapur.</li>
+                    <li>Selisih antara estimasi dan waktu penyajian sebenarnya semakin kecil.</li>
+                    <li>Umpan balik pelanggan terkait kemudahan pemesanan.</li>
+                  </ul>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>11. Diagram &amp; Gambar Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warmindo/erd.png" alt="ERD Warmindo25"><figcaption>ERD (Entity Relationship Diagram)</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warmindo/flowchart-eta.png" alt="Flowchart algoritma Dynamic ETA"><figcaption>Flowchart Algoritma Dynamic ETA</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
               <div class="project-links">
-    <a href="https://github.com/Chocostobeli/UAS_FRONTEND.git" class="project-link" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> View github </a>
-</div>
-            </div>
-          </article>
-          <article class="project-card">
-    <div class="project-image">
-        <img src="assets/myskilll.png" alt="Data Preparation and Visualization using Tableau" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="project-content">
-        <p class="project-category">Data Analytics &amp; Visualization</p>
-        <h3>Data Preparation and Visualization</h3>
-        <p class="project-description">
-            Completed a Data Science Introduction short class by MySkill, applying essential data preparation techniques using Tableau Desktop. The project involved identifying and removing duplicate records, creating unique identifiers, standardizing categorical data, reviewing data types, and handling missing values. I also developed visualizations to compare average age and height across countries, strengthening my understanding of data quality and effective data visualization.
-        </p>
-        <div class="project-tech">
-            <span>Tableau Desktop</span>
-            <span>Data Preparation</span>
-            <span>Data Visualization</span>
-        </div>
-<div class="project-links">
-    <a href="https://lnkd.in/p/gHmEcNDC" 
-       class="project-link" 
-       target="_blank" 
-       rel="noopener noreferrer">
-        <i class="fas fa-external-link-alt"></i> Live presentasi
-    </a>
-</div>
-    </div>
-</article>
-          <article class="project-card">
-            <div class="project-image">
-              <img src="assets/projects/culinatech-ai.png" alt="Culinatech AI restaurant ordering interface" loading="lazy" onerror="this.style.display='none'">
-            </div>
-            <div class="project-content">
-              <p class="project-category">Full-Stack Application</p>
-              <h3>Culinatech AI</h3>
-              <p class="project-description">Developed a restaurant ordering application featuring menu items such as burgers and sandwiches. The interface includes menu customization, portion controls, topping and side-option selection, order summaries, and payment-method selection.</p>
-              <div class="project-tech"><span>Front-End</span><span>Back-End</span><span>UI Design</span></div>
-              <div class="project-links"><span class="project-link project-link-static">Full-Stack Project</span></div>
+                <a href="https://github.com/Bestariseptiani/warmindo25" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> Lihat GitHub
+                </a>
+              </div>
             </div>
           </article>
 
+          <!-- 2. WARISTA -->
           <article class="project-card">
             <div class="project-image">
-              <img src="assets/projects/pengaduan-masyarakat.png" alt="Public complaint application project" loading="lazy" onerror="this.style.display='none'">
+              <img src="assets/warista.png" alt="Rancangan antarmuka Warista" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="project-content">
-              <p class="project-category">Application Development</p>
-              <h3>Public Complaint Application</h3>
-              <p class="project-description">Developed an application for submitting and managing public complaints. The project focuses on providing a structured way for users to report issues and for submitted complaints to be recorded and reviewed.</p>
-              <div class="project-tech"><span>Application Development</span><span>Database</span></div>
-              <div class="project-links"><span class="project-link project-link-static">Application Project</span></div>
+              <p class="project-category">Desain UI/UX &amp; Pengembangan Front-End</p>
+              <h3>Warista</h3>
+              <p class="project-description">
+                Merancang antarmuka di Figma dan mengembangkan front-end platform yang memandu pengguna langkah demi langkah dalam menyiapkan surat keterangan waris. Alur yang jelas dan praktis membantu pengguna memahami persyaratan administrasi yang diperlukan.
+              </p>
+              <div class="project-tech">
+                <span>Figma</span><span>Front-End</span><span>Desain UI/UX</span>
+              </div>
+
+              <details class="project-analysis">
+                <summary>Analisis Bisnis: Warista</summary>
+                <div class="analysis-body">
+                  <h5>1. Latar Belakang &amp; Masalah Bisnis</h5>
+                  <p>Pengurusan surat keterangan waris sering membingungkan masyarakat awam. Persyaratan dokumen, urutan langkah, dan pihak yang harus didatangi tidak mudah dipahami, sehingga orang berisiko salah menyiapkan berkas, bolak-balik mengurus, dan membuang waktu.</p>
+                  <ul>
+                    <li>Informasi persyaratan tersebar dan sulit dipahami.</li>
+                    <li>Pengguna tidak tahu urutan langkah yang benar.</li>
+                    <li>Kesalahan data atau kekurangan dokumen menyebabkan proses berulang.</li>
+                  </ul>
+
+                  <h5>2. Tujuan Bisnis</h5>
+                  <ul>
+                    <li>Menyediakan panduan terstruktur agar pengguna dapat menyiapkan berkas dengan benar sejak awal.</li>
+                    <li>Mengurangi kesalahan dan pengulangan proses administrasi.</li>
+                    <li>Membuat proses yang rumit terasa sederhana melalui desain antarmuka yang jelas.</li>
+                  </ul>
+
+                  <h5>3. Pengguna &amp; Pemangku Kepentingan</h5>
+                  <table class="analysis-table">
+                    <tr><th>Pihak</th><th>Peran &amp; Kebutuhan</th></tr>
+                    <tr><td>Ahli waris / pengguna</td><td>Memahami syarat, mengisi data, dan menyiapkan dokumen dengan benar.</td></tr>
+                    <tr><td>Pihak pengurus administrasi</td><td>Menerima berkas yang lengkap dan sesuai format.</td></tr>
+                  </table>
+
+                  <h5>4. Analisis Perjalanan Pengguna (User Journey)</h5>
+                  <ol>
+                    <li>Pengguna membuka platform dan memahami tujuan surat keterangan waris.</li>
+                    <li>Pengguna melihat daftar persyaratan dan dokumen yang perlu disiapkan.</li>
+                    <li>Pengguna mengisi data pewaris dan ahli waris secara bertahap.</li>
+                    <li>Pengguna memeriksa ringkasan data sebelum melanjutkan.</li>
+                    <li>Pengguna memperoleh panduan tindak lanjut untuk mengurus surat.</li>
+                  </ol>
+
+                  <h5>5. Kebutuhan Fungsional</h5>
+                  <ul>
+                    <li>Panduan alur langkah demi langkah (step-by-step).</li>
+                    <li>Formulir pengisian data yang terstruktur.</li>
+                    <li>Daftar periksa persyaratan dokumen.</li>
+                    <li>Halaman ringkasan untuk meninjau data sebelum dilanjutkan.</li>
+                  </ul>
+
+                  <h5>6. Kebutuhan Non-Fungsional</h5>
+                  <ul>
+                    <li>Bahasa dan label yang mudah dipahami masyarakat awam.</li>
+                    <li>Tampilan konsisten dan responsif.</li>
+                    <li>Alur yang tidak membebani pengguna dengan terlalu banyak isian dalam satu halaman.</li>
+                  </ul>
+
+                  <h5>7. Pendekatan Desain</h5>
+                  <p>Proses dimulai dari pemahaman masalah pengguna, perancangan alur, pembuatan wireframe dan prototipe di Figma, lalu implementasi front-end berdasarkan desain tersebut agar tampilan akhir konsisten dengan rancangan.</p>
+
+                  <h5>8. Nilai &amp; Manfaat Bisnis</h5>
+                  <ul>
+                    <li>Pengguna lebih siap dan percaya diri dalam mengurus dokumen.</li>
+                    <li>Waktu dan tenaga yang terbuang akibat kesalahan administrasi berkurang.</li>
+                    <li>Informasi hukum-administratif yang rumit menjadi lebih mudah diakses.</li>
+                  </ul>
+
+                  <h5>9. Indikator Keberhasilan</h5>
+                  <ul>
+                    <li>Pengguna dapat menyelesaikan seluruh alur tanpa bantuan tambahan.</li>
+                    <li>Berkurangnya kesalahan pengisian data pada saat uji coba.</li>
+                    <li>Umpan balik pengguna terkait kejelasan alur dan bahasa.</li>
+                  </ul>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>10. Diagram &amp; Gambar Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warista/user-journey.png" alt="User journey Warista"><figcaption>User Journey</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warista/flowchart.png" alt="Alur proses Warista"><figcaption>Flowchart Alur Proses</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warista/wireframe.png" alt="Wireframe Warista"><figcaption>Wireframe</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/warista/prototipe.png" alt="Prototipe Figma Warista"><figcaption>Prototipe Figma</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <div class="project-links">
+                <a href="https://github.com/Chocostobeli/UAS_FRONTEND.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> Lihat GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. DATA PREPARATION & VISUALIZATION -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/myskilll.png" alt="Persiapan dan visualisasi data menggunakan Tableau" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">Analitik &amp; Visualisasi Data</p>
+              <h3>Persiapan &amp; Visualisasi Data</h3>
+              <p class="project-description">
+                Menyelesaikan short class Data Science Introduction dari MySkill dengan menggunakan Tableau Desktop untuk membersihkan dan menyiapkan dataset: menghapus data duplikat, membuat pengenal unik, menyeragamkan data kategorikal, memeriksa tipe data, dan menangani nilai yang hilang. Membuat visualisasi perbandingan rata-rata usia dan tinggi badan antarnegara.
+              </p>
+              <div class="project-tech">
+                <span>Tableau Desktop</span><span>Persiapan Data</span><span>Visualisasi Data</span>
+              </div>
+
+              <details class="project-analysis">
+                <summary>Analisis Bisnis: Persiapan &amp; Visualisasi Data</summary>
+                <div class="analysis-body">
+                  <h5>1. Latar Belakang &amp; Pertanyaan Bisnis</h5>
+                  <p>Data mentah umumnya tidak langsung siap dianalisis: ada duplikasi, penulisan kategori yang tidak seragam, tipe data yang salah, dan nilai kosong. Keputusan yang diambil dari data seperti ini berisiko keliru. Proyek ini menjawab pertanyaan: <em>bagaimana perbandingan rata-rata usia dan tinggi badan antarnegara, dan bagaimana memastikan data yang dipakai sudah akurat dan layak dianalisis?</em></p>
+
+                  <h5>2. Tujuan Analisis</h5>
+                  <ul>
+                    <li>Memastikan kualitas data sebelum dianalisis.</li>
+                    <li>Membandingkan rata-rata usia dan tinggi badan antarnegara secara visual.</li>
+                    <li>Menyajikan hasil dalam bentuk yang mudah dipahami pihak non-teknis.</li>
+                  </ul>
+
+                  <h5>3. Tahapan Persiapan Data (Data Preparation)</h5>
+                  <table class="analysis-table">
+                    <tr><th>Tahap</th><th>Tujuan</th></tr>
+                    <tr><td>Menghapus duplikat</td><td>Mencegah satu entri terhitung berkali-kali sehingga angka rata-rata bias.</td></tr>
+                    <tr><td>Membuat pengenal unik (ID)</td><td>Memudahkan identifikasi dan pelacakan setiap baris data.</td></tr>
+                    <tr><td>Menyeragamkan data kategorikal</td><td>Menyamakan penulisan (misalnya nama negara) agar pengelompokan akurat.</td></tr>
+                    <tr><td>Memeriksa tipe data</td><td>Memastikan angka, teks, dan tanggal bertipe benar agar dapat dihitung.</td></tr>
+                    <tr><td>Menangani nilai hilang</td><td>Mengurangi distorsi hasil akibat data kosong.</td></tr>
+                  </table>
+
+                  <h5>4. Analisis &amp; Visualisasi</h5>
+                  <p>Setelah data bersih, dihitung rata-rata usia dan tinggi badan untuk setiap negara, kemudian divisualisasikan dalam Tableau Desktop. Visualisasi membantu pembaca melihat perbedaan antarkelompok dengan cepat tanpa harus membaca tabel angka yang panjang.</p>
+
+                  <h5>5. Wawasan &amp; Nilai Bisnis</h5>
+                  <ul>
+                    <li>Data yang telah dibersihkan menghasilkan angka yang lebih dapat dipercaya.</li>
+                    <li>Perbandingan antarnegara memperlihatkan pola dan perbedaan antarkelompok yang bisa menjadi dasar pertanyaan analisis lanjutan.</li>
+                    <li>Alur kerja yang sama dapat diterapkan pada data bisnis lain, misalnya penjualan, pelanggan, atau operasional.</li>
+                  </ul>
+
+                  <h5>6. Keterbatasan &amp; Pengembangan Lanjutan</h5>
+                  <ul>
+                    <li>Analisis masih bersifat deskriptif; belum menjelaskan penyebab perbedaan antarnegara.</li>
+                    <li>Dapat dikembangkan dengan tambahan variabel, analisis tren, atau dasbor interaktif.</li>
+                  </ul>
+
+                  <h5>7. Keterampilan yang Terasah</h5>
+                  <p>Pembersihan data, pemahaman kualitas data, pemilihan jenis visualisasi yang tepat, dan penyampaian hasil analisis secara ringkas.</p>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>8. Diagram &amp; Gambar Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/data/data-sebelum.png" alt="Dataset sebelum dibersihkan"><figcaption>Dataset Sebelum Dibersihkan</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/data/data-sesudah.png" alt="Dataset setelah dibersihkan"><figcaption>Dataset Setelah Dibersihkan</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/data/alur-data-prep.png" alt="Alur persiapan data"><figcaption>Alur Persiapan Data</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/data/visualisasi.png" alt="Visualisasi Tableau"><figcaption>Visualisasi di Tableau</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <div class="project-links">
+                <a href="https://lnkd.in/p/gHmEcNDC" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> Lihat Presentasi
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. CULINATECH -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/culinatech-ai.png" alt="Rancangan antarmuka aplikasi mobile pemesanan makanan Culinatech" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <p class="project-category">Desain UI/UX &middot; Aplikasi Mobile</p>
+              <h3>Culinatech</h3>
+              <p class="project-description">
+                Merancang UI/UX Culinatech, aplikasi mobile pemesanan makanan, di Figma. Rancangan mencakup seluruh perjalanan pemesanan: pendaftaran dan login, penelusuran restoran, menu dan detail item, kustomisasi pesanan, ringkasan pesanan dan pembayaran, keanggotaan, serta riwayat pesanan.
+              </p>
+              <div class="project-tech">
+                <span>Figma</span><span>Desain UI/UX</span><span>Aplikasi Mobile</span>
+              </div>
+
+              <details class="project-analysis">
+                <summary>Analisis Bisnis: Culinatech</summary>
+                <div class="analysis-body">
+                  <h5>1. Latar Belakang &amp; Masalah Bisnis</h5>
+                  <p>Pemesanan makanan lewat ponsel sudah umum, tetapi pengalaman pengguna sering terhambat oleh alur yang panjang, sulitnya menemukan menu, dan proses kustomisasi serta pembayaran yang membingungkan. Hal ini dapat membuat pengguna membatalkan pesanan di tengah jalan dan enggan kembali.</p>
+
+                  <h5>2. Tujuan Bisnis</h5>
+                  <ul>
+                    <li>Menyederhanakan perjalanan pemesanan dari penelusuran hingga pembayaran.</li>
+                    <li>Mendorong pemesanan ulang melalui riwayat pesanan dan keanggotaan.</li>
+                    <li>Menciptakan pengalaman yang konsisten dan mudah dipahami bagi pengguna baru.</li>
+                  </ul>
+
+                  <h5>3. Pengguna &amp; Pemangku Kepentingan</h5>
+                  <table class="analysis-table">
+                    <tr><th>Pihak</th><th>Kebutuhan</th></tr>
+                    <tr><td>Pelanggan</td><td>Menemukan restoran dan menu dengan cepat, menyesuaikan pesanan, dan membayar dengan mudah.</td></tr>
+                    <tr><td>Anggota (member)</td><td>Mendapat manfaat keanggotaan dan melihat riwayat transaksi.</td></tr>
+                    <tr><td>Restoran / pengelola</td><td>Menerima pesanan yang jelas dan terperinci dari pelanggan.</td></tr>
+                  </table>
+
+                  <h5>4. Perjalanan Pengguna (User Journey)</h5>
+                  <ol>
+                    <li>Mendaftar dan masuk ke aplikasi.</li>
+                    <li>Menelusuri daftar restoran.</li>
+                    <li>Membuka menu dan melihat detail item.</li>
+                    <li>Menyesuaikan pesanan (kustomisasi).</li>
+                    <li>Meninjau ringkasan pesanan dan melakukan pembayaran.</li>
+                    <li>Memantau keanggotaan dan melihat riwayat pesanan untuk memesan ulang.</li>
+                  </ol>
+
+                  <h5>5. Kebutuhan Fungsional (Cakupan Rancangan)</h5>
+                  <ul>
+                    <li>Pendaftaran dan login pengguna.</li>
+                    <li>Penelusuran restoran, menu, dan detail item.</li>
+                    <li>Kustomisasi pesanan dan ringkasan pesanan.</li>
+                    <li>Pembayaran.</li>
+                    <li>Keanggotaan dan riwayat pesanan.</li>
+                  </ul>
+
+                  <h5>6. Prinsip Desain</h5>
+                  <ul>
+                    <li>Navigasi sederhana dengan jumlah langkah seminimal mungkin.</li>
+                    <li>Hierarki visual yang jelas agar informasi penting (harga, status, tombol aksi) mudah terlihat.</li>
+                    <li>Konsistensi komponen, warna, dan tipografi di seluruh layar.</li>
+                  </ul>
+
+                  <h5>7. Nilai &amp; Manfaat Bisnis</h5>
+                  <ul>
+                    <li>Alur yang mulus menekan risiko pengguna berhenti di tengah proses pemesanan.</li>
+                    <li>Fitur keanggotaan dan riwayat mendukung loyalitas dan pemesanan berulang.</li>
+                    <li>Prototipe memungkinkan validasi ide sebelum biaya pengembangan dikeluarkan.</li>
+                  </ul>
+
+                  <h5>8. Indikator Keberhasilan (untuk Uji Prototipe)</h5>
+                  <ul>
+                    <li>Waktu yang dibutuhkan pengguna untuk menyelesaikan satu pesanan.</li>
+                    <li>Tingkat keberhasilan pengguna menyelesaikan alur tanpa bantuan.</li>
+                    <li>Umpan balik pengguna terkait kemudahan dan kejelasan tampilan.</li>
+                  </ul>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>9. Diagram &amp; Gambar Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/culinatech/persona.png" alt="Persona pengguna Culinatech"><figcaption>User Persona</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/culinatech/user-journey.png" alt="User journey Culinatech"><figcaption>User Journey</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/culinatech/user-flow.png" alt="User flow Culinatech"><figcaption>User Flow</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/culinatech/wireframe.png" alt="Wireframe Culinatech"><figcaption>Wireframe</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+                <div class="project-links">
+                <a href="https://www.figma.com/design/3rsagbNRgIYph9nS7GIseP/Culinatech-AI?node-id=0-1&t=lcw240ViAZGduldQ-1" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> Presentasi Langsung
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. PUBLIC COMPLAINT APPLICATION -->
+          <article class="project-card">
+            <div class="project-image project-gallery">
+              <div class="project-gallery-track">
+                <img src="assets/projects/index.png" alt="Aplikasi pengaduan masyarakat: halaman beranda">
+                <img src="assets/projects/loginpm.png" alt="Aplikasi pengaduan masyarakat: halaman login">
+                <img src="assets/projects/loginpm2.png" alt="Aplikasi pengaduan masyarakat: tampilan login alternatif">
+                <img src="assets/projects/registerpm.png" alt="Aplikasi pengaduan masyarakat: halaman registrasi">
+                <img src="assets/projects/dashboardpm.png" alt="Aplikasi pengaduan masyarakat: dasbor">
+                <img src="assets/projects/laporanpm.png" alt="Aplikasi pengaduan masyarakat: formulir pengaduan">
+                <img src="assets/projects/riwayatpm1.png" alt="Aplikasi pengaduan masyarakat: riwayat pengaduan">
+                <img src="assets/projects/riwayatpm2.png" alt="Aplikasi pengaduan masyarakat: detail riwayat pengaduan">
+                <img src="assets/projects/profil.png" alt="Aplikasi pengaduan masyarakat: profil pengguna">
+              </div>
+              <button class="gallery-arrow prev" type="button" aria-label="Gambar sebelumnya">&#10094;</button>
+              <button class="gallery-arrow next" type="button" aria-label="Gambar berikutnya">&#10095;</button>
+            </div>
+            <div class="project-content">
+              <p class="project-category">Pengembangan Aplikasi</p>
+              <h3>Aplikasi Pengaduan Masyarakat</h3>
+              <p class="project-description">
+                Mengembangkan aplikasi pengaduan masyarakat yang memungkinkan pengguna mendaftar, masuk, dan mengirim laporan melalui formulir terstruktur. Aplikasi dilengkapi dasbor, riwayat pengaduan untuk memantau laporan yang telah dikirim, dan halaman profil, dengan seluruh data tersimpan di basis data agar mudah dicatat dan ditinjau.
+              </p>
+              <div class="project-tech">
+                <span>Pengembangan Aplikasi</span><span>Basis Data</span><span>Autentikasi Pengguna</span>
+              </div>
+
+              <details class="project-analysis">
+                <summary>Analisis Bisnis: Aplikasi Pengaduan Masyarakat</summary>
+                <div class="analysis-body">
+                  <h5>1. Latar Belakang &amp; Masalah Bisnis</h5>
+                  <p>Pengaduan masyarakat yang disampaikan secara lisan atau tertulis di atas kertas sulit dilacak, mudah hilang, dan tidak memberi kepastian tindak lanjut. Pihak pengelola pun kesulitan merekap jumlah laporan, jenis masalah, dan status penanganannya.</p>
+                  <ul>
+                    <li>Laporan tidak tercatat rapi dan sulit dicari kembali.</li>
+                    <li>Pelapor tidak mengetahui status laporannya.</li>
+                    <li>Pengelola tidak memiliki data terpusat untuk evaluasi.</li>
+                  </ul>
+
+                  <h5>2. Tujuan Bisnis</h5>
+                  <ul>
+                    <li>Menyediakan kanal pengaduan yang mudah diakses kapan saja.</li>
+                    <li>Mencatat seluruh laporan secara terstruktur dalam basis data.</li>
+                    <li>Memberi transparansi status laporan kepada pelapor.</li>
+                    <li>Mempermudah pengelola meninjau dan menindaklanjuti laporan.</li>
+                  </ul>
+
+                  <h5>3. Pemangku Kepentingan</h5>
+                  <table class="analysis-table">
+                    <tr><th>Pihak</th><th>Peran &amp; Kebutuhan</th></tr>
+                    <tr><td>Masyarakat (pelapor)</td><td>Mendaftar, mengirim laporan, dan memantau riwayat serta status laporan.</td></tr>
+                    <tr><td>Petugas / Admin</td><td>Meninjau laporan masuk dan memperbarui statusnya.</td></tr>
+                    <tr><td>Pimpinan / Instansi</td><td>Memperoleh rekap laporan sebagai bahan evaluasi layanan.</td></tr>
+                  </table>
+
+                  <h5>4. Analisis Proses: Kondisi Saat Ini vs Solusi</h5>
+                  <table class="analysis-table">
+                    <tr><th>Kondisi Saat Ini (As-Is)</th><th>Solusi (To-Be)</th></tr>
+                    <tr><td>Pengaduan disampaikan manual dan dicatat di kertas.</td><td>Pengaduan dikirim lewat formulir online dan tersimpan di basis data.</td></tr>
+                    <tr><td>Pelapor tidak tahu perkembangan laporan.</td><td>Pelapor memantau riwayat dan status melalui akun.</td></tr>
+                    <tr><td>Rekap dibuat manual.</td><td>Data laporan terpusat dan mudah ditinjau.</td></tr>
+                  </table>
+
+                  <h5>5. Alur Proses Utama</h5>
+                  <ol>
+                    <li>Pengguna mendaftar dan login.</li>
+                    <li>Pengguna mengisi formulir pengaduan dan mengirimkannya.</li>
+                    <li>Laporan tersimpan di basis data dan muncul pada riwayat pengguna.</li>
+                    <li>Pengelola meninjau laporan dan menindaklanjutinya.</li>
+                    <li>Pengguna memantau perkembangan melalui halaman riwayat.</li>
+                  </ol>
+
+                  <h5>6. Kebutuhan Fungsional</h5>
+                  <ul>
+                    <li>Registrasi, login, dan logout pengguna (autentikasi).</li>
+                    <li>Formulir pengaduan yang terstruktur.</li>
+                    <li>Dasbor ringkasan, riwayat pengaduan, dan detail riwayat.</li>
+                    <li>Pengelolaan profil pengguna.</li>
+                    <li>Penyimpanan seluruh data ke basis data.</li>
+                  </ul>
+
+                  <h5>7. Kebutuhan Non-Fungsional</h5>
+                  <ul>
+                    <li>Keamanan akun: hanya pengguna terautentikasi yang dapat mengakses data laporannya.</li>
+                    <li>Tampilan sederhana dan mudah dipahami masyarakat umum.</li>
+                    <li>Data tersimpan konsisten dan dapat dicari kembali.</li>
+                  </ul>
+
+                  <h5>8. Aturan Bisnis</h5>
+                  <ul>
+                    <li>Pengaduan hanya dapat dikirim oleh pengguna yang sudah terdaftar dan login.</li>
+                    <li>Setiap pengguna hanya dapat melihat riwayat laporan miliknya sendiri.</li>
+                    <li>Setiap laporan memiliki status yang dapat dipantau.</li>
+                  </ul>
+
+                  <h5>9. Nilai &amp; Manfaat Bisnis</h5>
+                  <ul>
+                    <li>Layanan pengaduan lebih mudah diakses dan transparan.</li>
+                    <li>Data laporan terdokumentasi sehingga tidak mudah hilang.</li>
+                    <li>Waktu rekap dan pengecekan laporan lebih singkat.</li>
+                    <li>Data dapat menjadi dasar evaluasi dan perbaikan layanan.</li>
+                  </ul>
+
+                  <h5>10. Indikator Keberhasilan</h5>
+                  <ul>
+                    <li>Jumlah laporan yang berhasil tercatat dan dapat ditelusuri.</li>
+                    <li>Waktu dari laporan masuk hingga ditinjau pengelola.</li>
+                    <li>Kemudahan pengguna menyelesaikan alur pengaduan pada saat uji coba.</li>
+                  </ul>
+
+                  <div class="analysis-figures-wrap">
+                    <h5>11. Diagram &amp; Gambar Pendukung</h5>
+                    <div class="analysis-figures">
+                      <figure class="analysis-figure"><img data-src="assets/analisis/pengaduan/erd.png" alt="ERD aplikasi pengaduan masyarakat"><figcaption>ERD (Entity Relationship Diagram)</figcaption></figure>
+                      <figure class="analysis-figure"><img data-src="assets/analisis/pengaduan/flowchart.png" alt="Flowchart aplikasi pengaduan"><figcaption>Flowchart Alur Pengaduan</figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+              </details>
+
+              <div class="project-links">
+                <a href="http://laporwarga.wuaze.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> Presentasi Langsung
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -376,366 +799,513 @@
     <section class="certificates section" id="certificates">
       <div class="section-container">
         <header class="section-heading">
-          <p class="section-label">PROFESSIONAL DEVELOPMENT</p>
-          <h2>Certificates</h2>
-          <p class="section-description">Certifications and training programs that support my professional development.</p>
+          <p class="section-label">PENGEMBANGAN PROFESIONAL</p>
+          <h2>Sertifikat</h2>
+          <p class="section-description">Sertifikasi dan program pelatihan yang mendukung pengembangan profesional saya.</p>
         </header>
         <div class="certificate-cards">
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/bsnp.png" alt="BNSP Junior Web Programmer certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">BNSP</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">LSP UPN Veteran Jakarta</p><h3>Junior Web Programmer</h3><p>Certificate of Competence · February 2026</p><span class="certificate-category">Web Development</span></div>
+            <div class="certificate-image"><img src="assets/bsnp.png" alt="Sertifikat BNSP Junior Web Programmer" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">BNSP</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">LSP UPN Veteran Jakarta</p><h3>Junior Web Programmer</h3><p>Sertifikat Kompetensi · Februari 2026</p><span class="certificate-category">Pengembangan Web</span></div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/sertifksm.png" alt="KSM Multimedia Web Development certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">WEB DEV</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>Web Development Class</h3><p>February – December 2024</p><span class="certificate-category">Programming</span></div>
+            <div class="certificate-image"><img src="assets/sertifksm.png" alt="Sertifikat Web Development KSM Multimedia" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">WEB DEV</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>Kelas Web Development</h3><p>Februari – Desember 2024</p><span class="certificate-category">Pemrograman</span></div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/cousera.png" alt="Coursera Business Analysis and Process Management certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">COURSERA</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">Coursera</p><h3>Business Analysis &amp; Process Management</h3><p>Issued September 2026</p><span class="certificate-category">Business Analysis</span></div>
+            <div class="certificate-image"><img src="assets/cousera.png" alt="Sertifikat Coursera Business Analysis and Process Management" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">COURSERA</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Coursera</p><h3>Business Analysis &amp; Process Management</h3><p>Diterbitkan September 2026</p><span class="certificate-category">Analisis Bisnis</span></div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/professionalkom.png" alt="Pearson Professional Communication certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">PEARSON</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">Pearson</p><h3>Professional Communication</h3><p>Issued December 2025</p><span class="certificate-category">Communication</span></div>
+            <div class="certificate-image"><img src="assets/professionalkom.png" alt="Sertifikat Pearson Professional Communication" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">PEARSON</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Pearson</p><h3>Professional Communication</h3><p>Diterbitkan Desember 2025</p><span class="certificate-category">Komunikasi</span></div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/certificate_ai-career-readiness.png" alt="ASEAN Foundation AI Career Readiness Training badge" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">ASEAN Foundation</p><h3>AI Career Readiness Training</h3><p>Completed October 2026</p><span class="certificate-category">Artificial Intelligence</span></div>
+            <div class="certificate-image"><img src="assets/certificate_ai-career-readiness.png" alt="Lencana Pelatihan AI Career Readiness ASEAN Foundation" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">ASEAN Foundation</p><h3>AI Career Readiness Training</h3><p>Selesai Oktober 2026</p><span class="certificate-category">Kecerdasan Artifisial</span></div>
           </article>
-<article class="certificate-card">
-    <div class="certificate-image">
-        <img src="assets/pemakalah.png"
-             alt="SENAMIKA 2024 National Seminar Presenter Certificate"
-             loading="lazy"
-             onerror="this.style.display='none'">
-        <span class="certificate-placeholder">SENAMIKA 2024</span>
-    </div>
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img src="assets/pemakalah.png"
+                   alt="Sertifikat Pemakalah Seminar Nasional SENAMIKA 2024"
+                   loading="lazy"
+                   onerror="this.style.display='none'">
+              <span class="certificate-placeholder">SENAMIKA 2024</span>
+            </div>
 
-    <div class="certificate-content">
-        <p class="certificate-issuer">Universitas Pembangunan Nasional Veteran Jakarta</p>
-        <h3>National Seminar Presenter</h3>
-        <p>
-            Participated as a paper presenter in the 2024 National Student Seminar
-            on Computer Science and Applications, presenting research on
-            Data Governance in Supporting Innovation and Enterprise Growth
-            in the Big Data Era.
-        </p>
-        <span class="certificate-category">Seminar &amp; Research</span>
-    </div>
-</article>
-          <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/java.png" alt="Additional certificate 7" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">CERTIFICATE 07</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">oracle Academy</p><h3>java mundamental</h3><p>oracle Academy</p><span class="certificate-category">Add category</span></div>
+            <div class="certificate-content">
+              <p class="certificate-issuer">Universitas Pembangunan Nasional Veteran Jakarta</p>
+              <h3>Pemakalah Seminar Nasional</h3>
+              <p>
+                Berpartisipasi sebagai pemakalah pada Seminar Nasional Mahasiswa
+                Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) 2024, mempresentasikan
+                penelitian tentang Tata Kelola Data dalam Mendukung Inovasi dan
+                Pertumbuhan Perusahaan di Era Big Data.
+              </p>
+              <span class="certificate-category">Seminar &amp; Penelitian</span>
+            </div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/workshopksm.png" alt="Additional certificate 8" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">CERTIFICATE 08</span></div>
-            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>workshop game Development</h3><p>Add issue date or completion period</p><span class="certificate-category">Add category</span></div>
+            <div class="certificate-image"><img src="assets/java.png" alt="Sertifikat Java Fundamentals Oracle Academy" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">JAVA</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Oracle Academy</p><h3>Java Fundamentals</h3><p>Oracle Academy</p><span class="certificate-category">Pemrograman</span></div>
           </article>
           <article class="certificate-card">
-            <div class="certificate-image"><img src="assets/huawei.png" alt="Fundamental AI DEX Huawei Digital Talent Scholarship 2026 certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">FUNDAMENTAL AI</span></div>
-<div class="certificate-content"><p class="certificate-issuer">Digital Talent Academy · Komdigi</p><h3>Fundamental AI - DEX - Huawei</h3><p>Completed June – December 2026 · 19 Hours of Training</p><span class="certificate-category">Artificial Intelligence</span></div>
+            <div class="certificate-image"><img src="assets/workshopksm.png" alt="Sertifikat Workshop Game Development KSM Multimedia" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">GAME DEV</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">KSM Multimedia UPNVJ</p><h3>Workshop Game Development</h3><p>Workshop KSM Multimedia UPNVJ</p><span class="certificate-category">Pengembangan Game</span></div>
           </article>
           <article class="certificate-card">
-    <div class="certificate-image"><img src="assets/Hacktiv8.png" alt="Hacktiv8 Student Developer Initiative Code Generations and Optimization certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">HACKTIV8</span></div>
-    <div class="certificate-content"><p class="certificate-issuer">Hacktiv8 Indonesia · IBM SkillsBuild</p><h3>Code Generations and Optimization</h3><p>Issued October 2025 · Training held September 2025</p><span class="certificate-category">Software Development</span></div>
-</article>
+            <div class="certificate-image"><img src="assets/huawei.png" alt="Sertifikat Fundamental AI DEX Huawei Digital Talent Scholarship 2026" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">FUNDAMENTAL AI</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Digital Talent Academy · Komdigi</p><h3>Fundamental AI - DEX - Huawei</h3><p>Selesai Juni – Desember 2026 · 19 Jam Pelatihan</p><span class="certificate-category">Kecerdasan Artifisial</span></div>
+          </article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/Hacktiv8.png" alt="Sertifikat Hacktiv8 Student Developer Initiative Code Generations and Optimization" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">HACKTIV8</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Hacktiv8 Indonesia · IBM SkillsBuild</p><h3>Code Generations and Optimization</h3><p>Diterbitkan Oktober 2025 · Pelatihan September 2025</p><span class="certificate-category">Pengembangan Perangkat Lunak</span></div>
+          </article>
 
-<article class="certificate-card">
-    <div class="certificate-image"><img src="assets/Digital Talent Scholarship.png" alt="Digital Talent Scholarship 2025 Artificial Intelligence Micro Skill certificate" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI MICRO SKILL</span></div>
-    <div class="certificate-content"><p class="certificate-issuer">Digital Talent Scholarship · Komdigi</p><h3>Dasar-Dasar Implementasi Kecerdasan Artifisial</h3><p>Issued October 2025 · 1 Hour of Training</p><span class="certificate-category">Artificial Intelligence</span></div>
-</article>
+          <article class="certificate-card">
+            <div class="certificate-image"><img src="assets/Digital Talent Scholarship.png" alt="Sertifikat Micro Skill Kecerdasan Artifisial Digital Talent Scholarship 2025" loading="lazy" onerror="this.style.display='none'"><span class="certificate-placeholder">AI MICRO SKILL</span></div>
+            <div class="certificate-content"><p class="certificate-issuer">Digital Talent Scholarship · Komdigi</p><h3>Dasar-Dasar Implementasi Kecerdasan Artifisial</h3><p>Diterbitkan Oktober 2025 · 1 Jam Pelatihan</p><span class="certificate-category">Kecerdasan Artifisial</span></div>
+          </article>
 
-<article class="certificate-card">
-    <div class="certificate-image">
-        <img src="assets/myskill2.png" alt="MySkill Short Class Data Science Introduction certificate" loading="lazy" onerror="this.style.display='none'">
-        <span class="certificate-placeholder">DATA SCIENCE</span>
-    </div>
-    <div class="certificate-content">
-        <p class="certificate-issuer">MySkill</p>
-        <h3>Data Science Introduction</h3>
-        <p>Issued October 2026</p>
-        <span class="certificate-category">Data Analysis</span>
-    </div>
-</article>
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img src="assets/myskill2.png" alt="Sertifikat Short Class Data Science Introduction MySkill" loading="lazy" onerror="this.style.display='none'">
+              <span class="certificate-placeholder">DATA SCIENCE</span>
+            </div>
+            <div class="certificate-content">
+              <p class="certificate-issuer">MySkill</p>
+              <h3>Data Science Introduction</h3>
+              <p>Diterbitkan Oktober 2026</p>
+              <span class="certificate-category">Analisis Data</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-
-<!-- PUBLICATIONS SECTION -->
-<section class="publications section" id="publications">
-    <div class="section-container">
+    <!-- BAGIAN PUBLIKASI -->
+    <section class="publications section" id="publications">
+      <div class="section-container">
 
         <header class="section-heading">
-            <p class="section-label">RESEARCH & ACADEMIC WORK</p>
-            <h2>Publications <span>&amp; Research</span></h2>
-            <p class="section-description">
-                Academic research, conference papers, and final project
-                showcasing my work in information systems and software development.
-            </p>
+          <p class="section-label">PENELITIAN &amp; KARYA AKADEMIK</p>
+          <h2>Publikasi <span>&amp; Penelitian</span></h2>
+          <p class="section-description">
+            Penelitian akademik, makalah konferensi, dan tugas akhir
+            yang menampilkan karya saya di bidang sistem informasi dan pengembangan perangkat lunak.
+          </p>
         </header>
 
         <div class="publication-cards">
 
-            <!-- PUBLICATION 1: FINAL PROJECT -->
-            <article class="publication-card">
-                <div class="publication-number">01</div>
+          <!-- PUBLIKASI 1: TUGAS AKHIR -->
+          <article class="publication-card">
+            <div class="publication-number">01</div>
 
-                <div class="publication-content">
-                    <div class="publication-meta">
-                        <span class="publication-type">Final Project</span>
-                        <span class="publication-year">2026</span>
-                    </div>
+            <div class="publication-content">
+              <div class="publication-meta">
+                <span class="publication-type">Tugas Akhir</span>
+                <span class="publication-year">2026</span>
+              </div>
 
-                    <h3>
-                        Aplikasi Pemesanan Menu Berbasis QR Code dengan
-                        Algoritma Dynamic Estimated Time Arrival
-                        (Studi Kasus: Warmindo 25)
-                    </h3>
+              <h3>
+                Aplikasi Pemesanan Menu Berbasis QR Code dengan
+                Algoritma Dynamic Estimated Time Arrival
+                (Studi Kasus: Warmindo 25)
+              </h3>
 
-                    <p class="publication-authors">
-                        Mas Roro Putri Rhilowati Septiani
-                    </p>
+              <p class="publication-authors">
+                Mas Roro Putri Rhilowati Septiani
+              </p>
 
-                    <p class="publication-venue">
-                        Tugas Akhir · Universitas Pembangunan Nasional Veteran Jakarta
-                    </p>
+              <p class="publication-venue">
+                Tugas Akhir · Universitas Pembangunan Nasional Veteran Jakarta
+              </p>
 
-                    <p class="publication-description">
-                        Designed and developed a web-based food ordering
-                        application using QR Code for table identification
-                        and a Dynamic Estimated Time Arrival (ETA) algorithm
-                        to estimate customer waiting times based on kitchen
-                        capacity. The system was developed using the Waterfall
-                        method to support order management and improve
-                        service efficiency at Warmindo 25.
-                    </p>
+              <p class="publication-description">
+                Merancang dan mengembangkan aplikasi pemesanan makanan berbasis web
+                yang menggunakan QR Code untuk identifikasi meja dan algoritma
+                Dynamic Estimated Time Arrival (ETA) untuk memperkirakan waktu tunggu
+                pelanggan berdasarkan kapasitas dapur. Sistem dikembangkan dengan
+                metode Waterfall untuk mendukung pengelolaan pesanan dan
+                meningkatkan efisiensi layanan di Warmindo 25.
+              </p>
 
-                    <div class="publication-tags">
-                        <span>QR Code</span>
-                        <span>PHP</span>
-                        <span>Web Development</span>
-                        <span>Dynamic ETA</span>
-                        <span>Waterfall</span>
-                    </div>
+              <div class="publication-tags">
+                <span>QR Code</span>
+                <span>PHP</span>
+                <span>Pengembangan Web</span>
+                <span>Dynamic ETA</span>
+                <span>Waterfall</span>
+              </div>
 
-                    <div class="publication-actions">
-                        <a href="http://repository.upnvj.ac.id/id/eprint/51041"
-                           class="publication-link"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            View Repository ↗
-                        </a>
+              <div class="publication-actions">
+                <a href="http://repository.upnvj.ac.id/id/eprint/51041"
+                   class="publication-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Lihat Repositori ↗
+                </a>
 
-                        <a href="http://repository.upnvj.ac.id/51041/1/ABSTRAK.pdf"
-                           class="publication-link publication-link-secondary"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Read Abstract
-                        </a>
-                    </div>
-                </div>
-            </article>
+                <a href="http://repository.upnvj.ac.id/51041/1/ABSTRAK.pdf"
+                   class="publication-link publication-link-secondary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Baca Abstrak
+                </a>
+              </div>
+            </div>
+          </article>
 
-            <!-- PUBLICATION 2: PIGO -->
-            <article class="publication-card">
-                <div class="publication-number">02</div>
+          <!-- PUBLIKASI 2: PIGO -->
+          <article class="publication-card">
+            <div class="publication-number">02</div>
 
-                <div class="publication-content">
-                    <div class="publication-meta">
-                        <span class="publication-type">Conference Paper</span>
-                        <span class="publication-year">2024</span>
-                    </div>
+            <div class="publication-content">
+              <div class="publication-meta">
+                <span class="publication-type">Makalah Konferensi</span>
+                <span class="publication-year">2024</span>
+              </div>
 
-                    <h3>
-                        PIGO (Pizza Go): Implementasi Aplikasi Berbasis
-                        Website Menggunakan Metode Waterfall
-                    </h3>
+              <h3>
+                PIGO (Pizza Go): Implementasi Aplikasi Berbasis
+                Website Menggunakan Metode Waterfall
+              </h3>
 
-                    <p class="publication-authors">
-                        Mas Roro Putri Rhilowati Septiani, Hasuna Zhafirah
-                        Jalianti, Afifi Rufaida, Cornelia Lidya, Theresia Wati
-                    </p>
+              <p class="publication-authors">
+                Mas Roro Putri Rhilowati Septiani, Hasuna Zhafirah
+                Jalianti, Afifi Rufaida, Cornelia Lidya, Theresia Wati
+              </p>
 
-                    <p class="publication-venue">
-                        SENAMIKA · Prosiding Seminar Nasional Mahasiswa
-                        Bidang Ilmu Komputer dan Aplikasinya
-                    </p>
+              <p class="publication-venue">
+                SENAMIKA · Prosiding Seminar Nasional Mahasiswa
+                Bidang Ilmu Komputer dan Aplikasinya
+              </p>
 
-                    <p class="publication-description">
-                        This research discusses the implementation of a
-                        website-based pizza ordering application using the
-                        Waterfall development method. The application provides
-                        online menu browsing, product descriptions, user
-                        authentication, shopping cart functionality, and
-                        payment method selection to support a more convenient
-                        digital purchasing experience.
-                    </p>
+              <p class="publication-description">
+                Penelitian ini membahas implementasi aplikasi pemesanan pizza
+                berbasis website dengan metode pengembangan Waterfall.
+                Aplikasi menyediakan penelusuran menu secara online, deskripsi produk,
+                autentikasi pengguna, fitur keranjang belanja, dan pilihan metode
+                pembayaran untuk mendukung pengalaman pembelian digital yang
+                lebih nyaman.
+              </p>
 
-                    <div class="publication-tags">
-                        <span>Website</span>
-                        <span>PHP</span>
-                        <span>E-Commerce</span>
-                        <span>Waterfall</span>
-                    </div>
+              <div class="publication-tags">
+                <span>Website</span>
+                <span>PHP</span>
+                <span>E-Commerce</span>
+                <span>Waterfall</span>
+              </div>
 
-                    <div class="publication-actions">
-                        <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3202/2116"
-                           class="publication-link"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Read Full Paper ↗
-                        </a>
-                    </div>
-                </div>
-            </article>
+              <div class="publication-actions">
+                <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3202/2116"
+                   class="publication-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Baca Makalah Lengkap ↗
+                </a>
+              </div>
+            </div>
+          </article>
 
-            <!-- PUBLICATION 3: SMART PARKING -->
-            <article class="publication-card">
-                <div class="publication-number">03</div>
-                <div class="publication-content">
-                    <div class="publication-meta">
-                        <span class="publication-type">Conference Paper</span>
-                        <span class="publication-year">2024</span>
-                    </div>
+          <!-- PUBLIKASI 3: PARKIR CERDAS -->
+          <article class="publication-card">
+            <div class="publication-number">03</div>
+            <div class="publication-content">
+              <div class="publication-meta">
+                <span class="publication-type">Makalah Konferensi</span>
+                <span class="publication-year">2024</span>
+              </div>
 
-                    <h3>
-                        Manajemen Proyek Sistem Parkir Cerdas Berbasis
-                        Radio Frequency Identification (RFID) Menggunakan
-                        Pendekatan Work Breakdown Structure (WBS)
-                        dan Diagram Jaringan
-                    </h3>
+              <h3>
+                Manajemen Proyek Sistem Parkir Cerdas Berbasis
+                Radio Frequency Identification (RFID) Menggunakan
+                Pendekatan Work Breakdown Structure (WBS)
+                dan Diagram Jaringan
+              </h3>
 
-                    <p class="publication-authors">
-                        Afifi Rufaida, Idelia Larisa,
-                        Mas Roro Putri Rhilowati Septiani, Tri Rahayu
-                    </p>
+              <p class="publication-authors">
+                Afifi Rufaida, Idelia Larisa,
+                Mas Roro Putri Rhilowati Septiani, Tri Rahayu
+              </p>
 
-                    <p class="publication-venue">
-                        SENAMIKA · Prosiding Seminar Nasional Mahasiswa
-                        Bidang Ilmu Komputer dan Aplikasinya
-                    </p>
-                    <p class="publication-description">
-                        This research explores project planning for a
-                        smart parking system using Radio Frequency
-                        Identification (RFID). Work Breakdown Structure
-                        (WBS), network diagrams, and activity dependencies
-                        are applied to organize project tasks, identify
-                        critical activities, and support efficient project
-                        scheduling and resource allocation.
-                    </p>
-                    <div class="publication-tags">
-                        <span>RFID</span>
-                        <span>Project Management</span>
-                        <span>WBS</span>
-                        <span>Network Diagram</span>
-                    </div>
-                    <div class="publication-actions">
-                        <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3061/2101"
-                           class="publication-link"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Read Full Paper 
-                        </a>
-                    </div>
-                </div>
-            </article>
+              <p class="publication-venue">
+                SENAMIKA · Prosiding Seminar Nasional Mahasiswa
+                Bidang Ilmu Komputer dan Aplikasinya
+              </p>
+              <p class="publication-description">
+                Penelitian ini membahas perencanaan proyek sistem parkir
+                cerdas berbasis Radio Frequency Identification (RFID).
+                Work Breakdown Structure (WBS), diagram jaringan, dan
+                ketergantungan antaraktivitas digunakan untuk menyusun tugas proyek,
+                mengidentifikasi aktivitas kritis, serta mendukung penjadwalan
+                dan alokasi sumber daya yang efisien.
+              </p>
+              <div class="publication-tags">
+                <span>RFID</span>
+                <span>Manajemen Proyek</span>
+                <span>WBS</span>
+                <span>Diagram Jaringan</span>
+              </div>
+              <div class="publication-actions">
+                <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3061/2101"
+                   class="publication-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  Baca Makalah Lengkap ↗
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-    
-
-<!-- CONTACT SECTION -->
-<section class="contact section" id="contact">
-    <div class="section-container contact-inner">
-        <p class="section-label">GET IN TOUCH</p>
-        <h2>Let's <span>Connect</span></h2>
+    <!-- BAGIAN KONTAK -->
+    <section class="contact section" id="contact">
+      <div class="section-container contact-inner">
+        <p class="section-label">HUBUNGI SAYA</p>
+        <h2>Mari <span>Terhubung</span></h2>
 
         <p class="section-description">
-            Feel free to reach out for job opportunities, collaboration,
-            or professional discussions. Let's connect!
+          Silakan hubungi saya untuk peluang kerja, kolaborasi,
+          atau diskusi profesional. Mari terhubung!
         </p>
 
         <div class="contact-socials">
 
-            <a href="mailto:septialfian@gmail.com"
-               class="contact-social"
-               aria-label="Email">
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-                <span class="contact-arrow"></span>
-            </a>
+          <a href="mailto:septialfian@gmail.com"
+             class="contact-social"
+             aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <span class="contact-arrow"></span>
+          </a>
 
-            <a href="https://www.linkedin.com/in/masroroputri/"
-               class="contact-social"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
-                <span class="contact-arrow"></span>
-            </a>
+          <a href="https://www.linkedin.com/in/masroroputri/"
+             class="contact-social"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+            <span class="contact-arrow"></span>
+          </a>
 
-            <a href="https://github.com/Bestariseptiani"
-               class="contact-social"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="GitHub">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-                <span class="contact-arrow"></span>
-            </a>
+          <a href="https://github.com/Bestariseptiani"
+             class="contact-social"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <span class="contact-arrow"></span>
+          </a>
 
-            <a href="https://www.instagram.com/gazliery/"
-               class="contact-social"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-                <span class="contact-arrow"></span>
-            </a>
+          <a href="https://www.instagram.com/gazliery/"
+             class="contact-social"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+            <span class="contact-arrow"></span>
+          </a>
+          
+          <a href="https://wa.me/6285811484223"
+             class="contact-social"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>whatsapp</span>
+            <span class="contact-arrow"></span>
+          </a>
 
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer"><p>© <span id="year"></span> Putri. All rights reserved.</p></footer>
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    menuToggle.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('show');
-      menuToggle.classList.toggle('open', isOpen);
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Tutup menu' : 'Buka menu');
-    });
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('show');
-        menuToggle.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', 'Buka menu');
-      });
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  
-<!-- CERTIFICATE IMAGE PREVIEW -->
-<div class="certificate-lightbox" id="certificateLightbox">
-    <button class="certificate-lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</button>
-    <button class="certificate-lightbox-arrow prev" id="lightboxPrev" aria-label="Sertifikat sebelumnya">&#10094;</button>
+  <footer class="footer">
+    <p>© <span id="year"></span> Putri. Hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- PRATINJAU GAMBAR SERTIFIKAT -->
+  <div class="certificate-lightbox" id="certificateLightbox">
+    <button class="certificate-lightbox-close" id="lightboxClose" type="button" aria-label="Tutup pratinjau sertifikat">&times;</button>
+
+    <button class="certificate-lightbox-arrow prev" id="lightboxPrev" type="button" aria-label="Sertifikat sebelumnya">&#10094;</button>
+
     <div class="certificate-lightbox-content">
-        <img id="lightboxImage" src="" alt="Certificate preview">
-        <span class="certificate-lightbox-counter" id="lightboxCounter"></span>
+      <img id="lightboxImage" src="" alt="Pratinjau sertifikat">
+      <span class="certificate-lightbox-counter" id="lightboxCounter"></span>
     </div>
-    <button class="certificate-lightbox-arrow next" id="lightboxNext" aria-label="Sertifikat berikutnya">&#10095;</button>
-</div>
+
+    <button class="certificate-lightbox-arrow next" id="lightboxNext" type="button" aria-label="Sertifikat berikutnya">&#10095;</button>
+  </div>
+
+  <!-- ZOOM GAMBAR ANALISIS -->
+  <div class="analysis-zoom" id="analysisZoom" hidden>
+    <img id="analysisZoomImg" src="" alt="Gambar analisis diperbesar">
+  </div>
+
+  <!-- POPUP ANALISIS BISNIS -->
+  <div class="analysis-modal" id="analysisModal" hidden role="dialog" aria-modal="true" aria-labelledby="analysisModalTitle">
+    <div class="analysis-modal-box" id="analysisModalBox">
+      <div class="analysis-modal-head">
+        <h3 id="analysisModalTitle">Analisis Bisnis</h3>
+        <button class="analysis-modal-close" id="analysisModalClose" type="button" aria-label="Tutup analisis bisnis">&times;</button>
+      </div>
+      <div class="analysis-body" id="analysisModalBody"></div>
+    </div>
+  </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const images = Array.from(document.querySelectorAll(".certificate-image img"))
-        .filter(img => img.getAttribute("src") && img.getAttribute("src").trim() !== "");
+
+    // =========================
+    // 0. POPUP ANALISIS BISNIS
+    // =========================
+    const analysisModal = document.getElementById("analysisModal");
+    const analysisBox = document.getElementById("analysisModalBox");
+    const analysisTitle = document.getElementById("analysisModalTitle");
+    const analysisBody = document.getElementById("analysisModalBody");
+    const analysisClose = document.getElementById("analysisModalClose");
+
+    const analysisZoom = document.getElementById("analysisZoom");
+    const analysisZoomImg = document.getElementById("analysisZoomImg");
+
+    // Memuat gambar pendukung dari atribut data-src. Gambar yang filenya
+    // belum ada akan disembunyikan otomatis, dan bagiannya ikut hilang
+    // jika semua gambarnya belum tersedia.
+    function prepareFigures() {
+        analysisBody.querySelectorAll(".analysis-figures-wrap").forEach(function (wrap) {
+            const figures = Array.from(wrap.querySelectorAll(".analysis-figure"));
+            let pending = figures.length;
+
+            function check() {
+                pending--;
+                if (pending <= 0 && !wrap.querySelector(".analysis-figure:not([hidden])")) {
+                    wrap.hidden = true;
+                }
+            }
+
+            figures.forEach(function (fig) {
+                const img = fig.querySelector("img");
+                if (!img) { check(); return; }
+                img.addEventListener("error", function () { fig.hidden = true; check(); }, { once: true });
+                img.addEventListener("load", check, { once: true });
+                img.src = img.getAttribute("data-src");
+            });
+        });
+    }
+
+    function closeAnalysis() {
+        analysisModal.classList.remove("active");
+        analysisModal.hidden = true;
+        document.body.classList.remove("analysis-open");
+    }
+
+    if (analysisModal && analysisBox && analysisTitle && analysisBody && analysisClose) {
+        document.querySelectorAll("details.project-analysis").forEach(function (details) {
+            const summary = details.querySelector("summary");
+            const content = details.querySelector(".analysis-body");
+            if (!summary || !content) return;
+
+            const title = summary.textContent.trim();
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "analysis-btn";
+            button.textContent = "📊 Lihat Analisis Bisnis";
+            button.setAttribute("aria-haspopup", "dialog");
+
+            button.addEventListener("click", function () {
+                analysisTitle.textContent = title;
+                analysisBody.innerHTML = content.innerHTML;
+                prepareFigures();
+                analysisModal.hidden = false;
+                analysisModal.classList.add("active");
+                document.body.classList.add("analysis-open");
+                analysisBox.scrollTop = 0;
+                analysisClose.focus();
+            });
+
+            details.replaceWith(button);
+        });
+
+        analysisClose.addEventListener("click", closeAnalysis);
+
+        // Klik gambar untuk memperbesar, klik lagi untuk menutup
+        analysisBody.addEventListener("click", function (event) {
+            const img = event.target.closest(".analysis-figure img");
+            if (!img || !analysisZoom || !analysisZoomImg) return;
+            analysisZoomImg.src = img.src;
+            analysisZoomImg.alt = img.alt;
+            analysisZoom.hidden = false;
+            analysisZoom.classList.add("active");
+        });
+        if (analysisZoom) {
+            analysisZoom.addEventListener("click", function () {
+                analysisZoom.classList.remove("active");
+                analysisZoom.hidden = true;
+            });
+        }
+        analysisModal.addEventListener("click", function (event) {
+            if (event.target === analysisModal) closeAnalysis();
+        });
+        document.addEventListener("keydown", function (event) {
+            if (event.key !== "Escape") return;
+            if (analysisZoom && analysisZoom.classList.contains("active")) {
+                analysisZoom.classList.remove("active");
+                analysisZoom.hidden = true;
+                return;
+            }
+            if (analysisModal.classList.contains("active")) closeAnalysis();
+        });
+    }
+
+    // =========================
+    // 1. NAVIGASI MOBILE
+    // =========================
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("show");
+            menuToggle.classList.toggle("open", isOpen);
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute("aria-label", isOpen ? "Tutup menu" : "Buka menu");
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("show");
+                menuToggle.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Buka menu");
+            });
+        });
+    }
+
+    // =========================
+    // 2. TAHUN OTOMATIS DI FOOTER
+    // =========================
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+    // =========================
+    // 3. LIGHTBOX SERTIFIKAT
+    // =========================
+    const certificateImages = Array.from(
+        document.querySelectorAll(".certificate-image img")
+    ).filter(function (img) {
+        return img.getAttribute("src")?.trim() !== "";
+    });
 
     const lightbox = document.getElementById("certificateLightbox");
     const preview = document.getElementById("lightboxImage");
@@ -744,46 +1314,137 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.getElementById("lightboxNext");
     const counter = document.getElementById("lightboxCounter");
 
-    if (!lightbox || !preview || images.length === 0) return;
+    if (lightbox && preview && closeBtn && prevBtn && nextBtn && counter && certificateImages.length > 0) {
+        let currentIndex = 0;
 
-    let currentIndex = 0;
+        function showCertificate(index) {
+            currentIndex = (index + certificateImages.length) % certificateImages.length;
+            const currentImage = certificateImages[currentIndex];
+            preview.src = currentImage.src;
+            preview.alt = currentImage.alt || "Pratinjau sertifikat";
+            counter.textContent = `${currentIndex + 1} / ${certificateImages.length}`;
+            lightbox.classList.add("active");
+            document.body.classList.add("lightbox-open");
+        }
 
-    function showImage(index) {
-        currentIndex = (index + images.length) % images.length;
-        preview.src = images[currentIndex].src;
-        preview.alt = images[currentIndex].alt || "Certificate preview";
-        counter.textContent = `${currentIndex + 1} / ${images.length}`;
-        lightbox.classList.add("active");
-        document.body.classList.add("lightbox-open");
+        function closeLightbox() {
+            lightbox.classList.remove("active");
+            document.body.classList.remove("lightbox-open");
+            preview.src = "";
+        }
+
+        certificateImages.forEach(function (img, index) {
+            img.addEventListener("click", function () { showCertificate(index); });
+        });
+
+        closeBtn.addEventListener("click", closeLightbox);
+        prevBtn.addEventListener("click", function () { showCertificate(currentIndex - 1); });
+        nextBtn.addEventListener("click", function () { showCertificate(currentIndex + 1); });
+
+        lightbox.addEventListener("click", function (event) {
+            if (event.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (!lightbox.classList.contains("active")) return;
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowLeft") showCertificate(currentIndex - 1);
+            if (event.key === "ArrowRight") showCertificate(currentIndex + 1);
+        });
     }
 
-    function closeLightbox() {
-        lightbox.classList.remove("active");
-        document.body.classList.remove("lightbox-open");
-        preview.src = "";
+    // =========================
+    // 4. GALERI GAMBAR PROYEK
+    // =========================
+    document.querySelectorAll(".project-gallery").forEach(function (gallery) {
+        const track = gallery.querySelector(".project-gallery-track");
+        const prev = gallery.querySelector(".gallery-arrow.prev");
+        const next = gallery.querySelector(".gallery-arrow.next");
+        if (!track || !prev || !next) return;
+
+        const slides = Array.from(track.querySelectorAll("img"));
+        const total = slides.length;
+        if (!total) return;
+
+        let index = 0;
+
+        prev.removeAttribute("disabled");
+        next.removeAttribute("disabled");
+
+        const counter = document.createElement("span");
+        counter.className = "project-gallery-counter";
+        gallery.appendChild(counter);
+
+        function render() {
+            track.style.transform = "translateX(" + (-index * 100) + "%)";
+            counter.textContent = (index + 1) + " / " + total;
+        }
+
+        function go(n) {
+            index = (n + total) % total;   // loop: setelah gambar terakhir kembali ke pertama
+            render();
+        }
+
+        prev.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            go(index - 1);
+        });
+
+        next.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            go(index + 1);
+        });
+
+        // Geser dengan jari atau mouse
+        let startX = null;
+        gallery.addEventListener("pointerdown", function (e) {
+            if (e.target.closest(".gallery-arrow")) return;
+            startX = e.clientX;
+        });
+        gallery.addEventListener("pointerup", function (e) {
+            if (startX === null) return;
+            const dx = e.clientX - startX;
+            startX = null;
+            if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+        });
+        gallery.addEventListener("pointercancel", function () { startX = null; });
+
+        // Beri tahu di Console kalau ada file gambar yang tidak ketemu
+        slides.forEach(function (img) {
+            img.draggable = false;
+            img.addEventListener("error", function () {
+                console.warn("Gambar galeri tidak ditemukan:", img.getAttribute("src"));
+            });
+        });
+
+        render();
+    });
+
+
+    // =========================
+    // 5. MENU AKTIF SAAT SCROLL
+    // =========================
+    const spyLinks = Array.from(document.querySelectorAll(".nav-links .nav-link"));
+    const spySections = spyLinks
+        .map(function (link) { return document.querySelector(link.getAttribute("href")); })
+        .filter(Boolean);
+
+    if (spySections.length && "IntersectionObserver" in window) {
+        const spy = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                spyLinks.forEach(function (link) {
+                    link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+                });
+            });
+        }, { rootMargin: "-40% 0px -55% 0px" });
+
+        spySections.forEach(function (section) { spy.observe(section); });
     }
 
-    images.forEach((img, index) => {
-        img.addEventListener("click", () => showImage(index));
-    });
-
-    closeBtn.addEventListener("click", closeLightbox);
-    prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
-    nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
-
-    lightbox.addEventListener("click", event => {
-        if (event.target === lightbox) closeLightbox();
-    });
-
-    document.addEventListener("keydown", event => {
-        if (!lightbox.classList.contains("active")) return;
-        if (event.key === "Escape") closeLightbox();
-        if (event.key === "ArrowLeft") showImage(currentIndex - 1);
-        if (event.key === "ArrowRight") showImage(currentIndex + 1);
-    });
 });
 </script>
-
-  <script>function moveGallery(button,direction){const track=button.closest('.experience-gallery').querySelector('.gallery-track');track.scrollBy({left:direction*track.clientWidth,behavior:'smooth'});}</script>
 </body>
 </html>

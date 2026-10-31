@@ -13,6 +13,7 @@
   --shadow: 0 10px 28px rgba(110, 20, 35, .08);
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; color: var(--ink); font-family: Inter, "Segoe UI", Arial, sans-serif; line-height: 1.6; }
 img { max-width: 100%; }
@@ -138,12 +139,14 @@ button, input, textarea { font: inherit; }
 .organization-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 22px; }
 .organization-card { display: flex; flex-direction: column; min-width: 0; padding: 26px; overflow: hidden; border: 1px solid #e9dfe1; border-radius: 16px; background: white; }
 .organization-info { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-.organization-heading { min-width: 0; }
+.organization-heading, .organization-info > div { min-width: 0; }
 .organization-period { margin: 0 0 8px; color: #777; font-size: 12px; }
-.organization-heading h3 { margin: 0 0 6px; font-size: 20px; line-height: 1.4; overflow-wrap: anywhere; }
-.organization-heading h4 { margin: 0; color: #65484d; font-size: 13px; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.organization-heading h3, .organization-info h3 { margin: 0 0 6px; font-size: 20px; line-height: 1.4; overflow-wrap: anywhere; }
+.organization-heading h4, .organization-info h4 { margin: 0; color: #65484d; font-size: 13px; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
 .organization-number { flex-shrink: 0; color: #d8c7ca; font-size: 24px; font-weight: 800; }
 .organization-description { margin: 18px 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.organization-description ul { margin: 0; padding-left: 19px; }
+.organization-description li + li { margin-top: 8px; }
 .gallery-title { margin: 0 0 10px; font-size: 13px; }
 .organization-gallery { display: flex; gap: 10px; width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden; padding-bottom: 8px; scroll-snap-type: x mandatory; }
 .organization-gallery img { display: block; flex: 0 0 160px; width: 160px; height: 115px; border-radius: 9px; background: #f6f0f1; object-fit: cover; scroll-snap-align: start; }
@@ -287,7 +290,7 @@ body.lightbox-open { overflow: hidden; }
   .experience-cards, .organization-cards, .project-cards, .certificate-cards { grid-template-columns: 1fr; gap: 16px; }
   .experience-card, .organization-card { padding: 20px; }
   .experience-card h3 { font-size: 18px; }
-  .organization-heading h3 { font-size: 19px; }
+  .organization-heading h3, .organization-info h3 { font-size: 19px; }
   .organization-gallery img { flex-basis: 170px; width: 170px; height: 120px; }
   .project-image { height: 210px; }
   .project-content { padding: 20px; }
@@ -310,7 +313,7 @@ body.lightbox-open { overflow: hidden; }
 ======================================== */
 
 .publications {
-    padding: 90px 0;
+    padding: 90px 5%;
 }
 
 .publications .section-heading h2 span {
@@ -469,7 +472,7 @@ body.lightbox-open { overflow: hidden; }
 /* TABLET */
 @media (max-width: 768px) {
     .publications {
-        padding: 65px 0;
+        padding: 65px 5%;
     }
 
     .publication-card {
@@ -525,7 +528,7 @@ body.lightbox-open { overflow: hidden; }
 ======================================== */
 
 .contact {
-    padding: 90px 0;
+    padding: 90px 5%;
     background: #fafafa;
 }
 
@@ -597,7 +600,7 @@ body.lightbox-open { overflow: hidden; }
 /* MOBILE */
 @media (max-width: 480px) {
     .contact {
-        padding: 65px 0;
+        padding: 65px 5%;
     }
 
     .contact-socials {
@@ -609,3 +612,339 @@ body.lightbox-open { overflow: hidden; }
         padding: 16px;
     }
 }
+
+/* ========================================
+   PROJECT IMAGE GALLERY (slider)
+======================================== */
+
+.project-image,
+.project-image.project-gallery { height: 240px; }
+
+.project-image.project-gallery {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #f5eeee;
+  isolation: isolate;
+  touch-action: pan-y;
+}
+
+.project-gallery .project-gallery-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform .45s ease;
+  will-change: transform;
+}
+
+.project-gallery .project-gallery-track img {
+  display: block;
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  padding: 8px;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* matikan efek zoom hover khusus galeri */
+.project-card:hover .project-image.project-gallery img { transform: none; }
+
+.project-gallery .gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  color: var(--red);
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+  font-size: 18px;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: translateY(-50%);
+  transition: background .2s ease, color .2s ease;
+}
+.project-gallery .gallery-arrow.prev { left: 10px; }
+.project-gallery .gallery-arrow.next { right: 10px; }
+.project-gallery .gallery-arrow:hover { color: #fff; background: var(--red-dark); }
+.project-gallery .gallery-arrow:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+.project-gallery-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 10;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(48, 23, 27, .75);
+  font-size: 11px;
+  font-weight: 600;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.project-link-static { cursor: default; }
+.project-link-static:hover { color: #333; background: transparent; border-color: #dedede; }
+
+@media (max-width: 600px) {
+  .project-image,
+  .project-image.project-gallery { height: 220px; }
+  .project-gallery .gallery-arrow { width: 36px; height: 36px; }
+}
+
+/* ========================================
+   ANALISIS BISNIS (tombol, popup, gambar)
+======================================== */
+
+/* Tombol pembuka popup di kartu proyek */
+.analysis-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  color: #fff;
+  background: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.analysis-btn:hover { background: var(--red-dark); border-color: var(--red-dark); transform: translateY(-2px); }
+.analysis-btn:focus-visible,
+.analysis-modal-close:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+/* Popup */
+.analysis-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(20, 15, 17, .88);
+  backdrop-filter: blur(5px);
+}
+.analysis-modal.active { display: flex; animation: analysisFade .2s ease; }
+.analysis-modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  max-height: 88vh;
+  padding: 0 28px 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--red);
+  border-radius: 16px;
+  color: var(--ink);
+  background: var(--white);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .4);
+  text-align: left;
+  animation: analysisPop .25s ease;
+}
+.analysis-modal-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 -28px 18px;
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+.analysis-modal-head h3 { margin: 0; color: var(--ink); font-size: 18px; line-height: 1.4; }
+.analysis-modal-close {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--red);
+  background: var(--red-soft);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.analysis-modal-close:hover { color: #fff; background: var(--red); }
+body.analysis-open { overflow: hidden; }
+
+/* Isi analisis */
+.analysis-body { margin-top: 12px; color: var(--muted); overflow-wrap: anywhere; }
+.analysis-modal .analysis-body { margin-top: 0; }
+.analysis-body h5 {
+  margin: 24px 0 8px;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.analysis-modal .analysis-body > h5:first-child { margin-top: 0; }
+.analysis-body p,
+.analysis-body li { font-size: 13px; line-height: 1.8; }
+.analysis-body p { margin: 0 0 8px; }
+.analysis-body ul,
+.analysis-body ol { margin: 6px 0 8px; padding-left: 20px; }
+.analysis-body li + li { margin-top: 5px; }
+.analysis-body em { color: var(--ink); }
+
+.analysis-table {
+  width: 100%;
+  margin: 8px 0;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.analysis-table th,
+.analysis-table td {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.7;
+}
+.analysis-table th { color: var(--red-dark); background: var(--red-soft); font-weight: 800; }
+.analysis-table td { color: var(--muted); background: var(--white); }
+.analysis-table tr td:first-child { color: var(--ink); font-weight: 600; }
+
+/* Gambar pendukung (ERD, use case, dll.) */
+.analysis-figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+.analysis-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.analysis-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  padding: 6px;
+  object-fit: contain;
+  background: var(--white);
+  cursor: zoom-in;
+}
+.analysis-figure figcaption {
+  padding: 9px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.analysis-figure[hidden],
+.analysis-figures-wrap[hidden] { display: none; }
+
+/* Zoom gambar */
+.analysis-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(20, 15, 17, .92);
+  cursor: zoom-out;
+}
+.analysis-zoom.active { display: flex; }
+.analysis-zoom img {
+  max-width: 96vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+/* Cadangan: jika JavaScript nonaktif, analisis tampil sebagai dropdown */
+.project-analysis {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--red);
+  border-radius: 10px;
+  background: var(--surface);
+  text-align: left;
+}
+.project-analysis > summary { color: var(--ink); font-size: 13px; font-weight: 700; cursor: pointer; list-style: none; }
+.project-analysis > summary::-webkit-details-marker { display: none; }
+.project-analysis > summary::after { content: "＋"; float: right; color: var(--red); }
+.project-analysis[open] > summary::after { content: "－"; }
+
+@keyframes analysisFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes analysisPop {
+  from { opacity: 0; transform: translateY(16px) scale(.97); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .analysis-modal.active, .analysis-modal-box { animation: none; }
+  .analysis-btn { transition: none; }
+}
+
+@media (max-width: 600px) {
+  .analysis-modal { padding: 12px; }
+  .analysis-modal-box { max-height: 92vh; padding: 0 18px 22px; border-radius: 14px; }
+  .analysis-modal-head { margin: 0 -18px 16px; padding: 14px 18px; }
+  .analysis-modal-head h3 { font-size: 16px; }
+  .analysis-table th,
+  .analysis-table td { padding: 7px 8px; font-size: 12px; }
+  .analysis-figures { grid-template-columns: minmax(0, 1fr); }
+  .analysis-btn { width: 100%; }
+}
+
+
+/* ========================================
+   PERBAIKAN (CSS yang sebelumnya tidak bekerja)
+======================================== */
+
+/* Footer: class .footer dipakai di HTML tetapi belum punya aturan CSS */
+.footer {
+  padding: 28px 5%;
+  color: rgba(255, 255, 255, .85);
+  background: var(--ink);
+  font-size: 13px;
+  text-align: center;
+}
+.footer p { margin: 0; }
+
+/* Panah di kartu kontak: span .contact-arrow kosong, jadi panah tidak pernah tampil */
+.contact-arrow::before { content: "↗"; }
+.contact-social:hover .contact-arrow { color: var(--red); }
+
+/* Tombol di kartu pengalaman: jangan melebar penuh dan sejajar di dasar kartu */
+.experience-card .experience-demo { align-self: flex-start; margin-top: auto; }
+
+/* Kartu proyek: hanya satu elemen yang boleh "margin-top: auto"
+   supaya jarak antar-elemen konsisten di semua kartu */
+.project-content .project-tech { margin-top: 0; }
+.project-content .analysis-btn { margin-top: auto; }
+.analysis-btn + .project-links { margin-top: 0; }
